@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRJS-2a3c9db24d2641e24b0",applicationID:"1184416718"};;/*! For license information please see nr-loader-rum-1.249.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>v,Mt:()=>b,C5:()=>s,DL:()=>A,OP:()=>S,lF:()=>T,Yu:()=>x,Dg:()=>m,CX:()=>c,GE:()=>_,sU:()=>R});var n=r(8632),i=r(9567);const a={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},o={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!o[e])throw new Error("Info for ".concat(e," was never set"));return o[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");o[e]=(0,i.D)(t,a);const r=(0,n.ek)(e);r&&(r.info=o[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",g=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:50,error_sampling_rate:50,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},h="All configuration objects require an agent identifier!";function v(e){if(!e)throw new Error(h);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function m(e,t){if(!e)throw new Error(h);p[e]=(0,i.D)(t,g());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(h);var r=v(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},w={};function A(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!w[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return w[e]}function _(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");w[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=w[e])}const x=(0,n.mF)().o;var D=r(385),k=r(6818);const E={buildEnv:k.Re,customTransaction:void 0,disabled:!1,distMethod:k.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(D._A?.performance?.timeOrigin||D._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+D._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof D._A.XMLHttpRequest?.prototype?.addEventListener,version:k.q4,denyList:void 0},j={};function S(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!j[e])throw new Error("Runtime for ".concat(e," was never set"));return j[e]}function R(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");j[e]=(0,i.D)(t,E);const r=(0,n.ek)(e);r&&(r.runtime=j[e])}function T(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),a=0===Object.keys(r).length?e:r;for(let o in a)if(void 0!==e[o])try{Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>a,q4:()=>n});const n="1.249.0",i="PROD",a="CDN"},385:(e,t,r)=>{"use strict";r.d(t,{Nk:()=>d,Tt:()=>s,_A:()=>a,cv:()=>l,iS:()=>o,il:()=>n,ux:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),a=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),o=(a?.document?.readyState,Boolean("hidden"===a?.document?.visibilityState)),s=(a?.location,/iPad|iPhone|iPod/.test(a.navigator?.userAgent)),c=s&&"undefined"==typeof SharedWorker,u=((()=>{const e=a.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Boolean(n&&window.document.documentMode)),d=!!a.navigator?.sendBeacon,l=Math.floor(a?.performance?.timeOrigin||a?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>a});var n=r(50);const i={agentIdentifier:"",ee:void 0};class a{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),a=r(4322),o=r(3325);const s={};function c(e,t){const r={staged:!1,priority:o.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return o(t);s[e].get(t).staged=!0;const r=[...s[e]];function o(t){const r=e?n.ee.get(e):n.ee,o=a.X.handlers;if(r.backlog&&o){var s=r.backlog[t],c=o[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete o[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((t=>{let[r]=t;s[e].delete(r),o(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],a=e[3],o=e[2];i.apply(a,o)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),a=r(234);class o{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var g={on:h,addEventListener:h,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,a){!1!==a&&(a=!0);if(u.aborted&&!i)return;t&&a&&t.emit(e,r,n);for(var o=p(n),c=v(e),d=c.length,l=0;l<d;l++)c[l].apply(o,r);var f=b()[s[e]];f&&f.push([g,e,r,o]);return o},get:m,listeners:v,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",g.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return g;function p(e){return e&&e instanceof o?e:e?(0,i.X)(e,c,(()=>new o(c))):new o(c)}function h(e,t){n[e]=v(e).concat(t)}function v(e){return n[e]||[]}function m(t){return d[t]=d[t]||e(g,t)}function b(){return g.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,u.backlog={}}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,a){a?(a.buffer([e],i),a.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>a});var n=r(5546);a.on=o;var i=a.handlers={};function a(e,t,r,a){o(a||n.E,i,e,t,r)}function o(e,t,r,i,a){a||(a="feature"),e||(e=n.E);var o=t[a]=t[a]||{};(o[r]=o[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>o});var n=r(385);let i=!1,a=!1;try{const e={get passive(){return i=!0,!1},get signal(){return a=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function o(e,t){return i||a?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,o(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,o(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Rl:()=>o,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function a(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?a(t,r++).toString(16):"y"===e?(3&a()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var s=0;s<e;s++)o.push(a(r,++i).toString(16));return o.join("")}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>a,oD:()=>i});const n="NRBA",i=144e5,a=18e5},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),a=r(3325),o=r(385);const s="newrelic";const c={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{o._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>a});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function a(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>o,b2:()=>a});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function a(e,t){if(i())return e();(0,n.bP)("load",e,t)}function o(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>a,ek:()=>u,fP:()=>o,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function o(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=o();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=o();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=o();return t.initializedAgents?.[e]}function d(e,t){o()[e]=t}function l(){return function(){let e=o();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=o();const t=e.init||{};e.init={...t}}(),s(),function(){let e=o();const t=e.loader_config||{};e.loader_config={...t}}(),o()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>a,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>o});const n=r(3325).D.metrics,i="sm",a="cm",o="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},7530:(e,t,r)=>{"use strict";r.d(t,{j:()=>b});var n=r(3325),i=r(234),a=r(5546),o=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),g=r(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let a=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&a.push(e.api[t](...n))})),a.length>1?a:a[0]}(t,...n)}}))}var h=r(2825);const v=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let m=!1;function b(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},b=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:_,runtime:x={loaderType:b},exposed:D=!0}=t;const k=(0,g.gG)();A||(w=k.init,A=k.info,_=k.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,_||{}),A.jsAttributes??={},d.v6&&(A.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,A);const E=(0,i.P_)(e.agentIdentifier),j=[A.beacon,A.errorBeacon];m||(E.proxy.assets&&(v(E.proxy.assets),j.push(E.proxy.assets)),E.proxy.beacon&&j.push(E.proxy.beacon),p(),(0,g.EZ)("activatedFeatures",h.T)),x.denyList=[...E.ajax.deny_list||[],...E.ajax.block_internal?j:[]],(0,i.sU)(e.agentIdentifier,x),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const g={};var p=o.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,r,n,a){const o=(0,i.C5)(e);return null===r?delete o.jsAttributes[t]:(0,i.CX)(e,{...o,jsAttributes:{...o.jsAttributes,[t]:r}}),A(v,n,!0,a||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","addRelease"].forEach((e=>{g[e]=A(v,e,!0,"api")})),g.addPageAction=A(v,"addPageAction",!0,n.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,n.D.spa),g.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setApplicationVersion=function(e){if("string"==typeof e||null===e)return b("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},g.start=e=>{try{const t=e?"defined":"undefined";(0,a.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},g.recordReplay=function(){(0,a.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,a.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},g.pauseReplay=function(){(0,a.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,a.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,o="function"==typeof t;return(0,a.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,a.p)(m+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(h.emit((o?"":"no-")+"fn-start",[(0,s.z)(),i,o],r),o)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,e],r),e}finally{h.emit("fn-end",[(0,s.z)()],r)}}}};function A(e,t,r,i){return function(){return(0,a.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,a.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function _(){r.e(75).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,n.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,a.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,a.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>_()),!0):_(),g}(e.agentIdentifier,y)),void 0===e.exposed&&(e.exposed=D),m=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var a=n[e]={exports:{}};return r[e](a,a.exports,i),a.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>"nr-rum-1.249.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.249.0.PROD:",i.l=(r,n,a,o)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==a)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+a){s=l;break}}if(!s){c=!0;var f={75:"sha512-HcXyAuaRbdfES7GuZJPwimpBfHQYAggUt+9f7v0xmtqSP1pSPK/chshT+kmNNfPfvD1QbPyikVNC4frs8IQYkw=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+a),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[o]&&(s.integrity=f[o])}e[r]=[n];var g=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=g.bind(null,s.onerror),s.onload=g.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={50:0,832:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var a=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=a);var o=i.p+i.u(t),s=new Error;i.l(o,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var a=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+a+": "+o+")",s.name="ChunkLoadError",s.type=a,s.request=o,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,a,[o,s,c]=r,u=0;if(o.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)a=o[u],i.o(e,a)&&e[a]&&e[a][0](),e[a]=0},r=self["webpackChunk:NRBA-1.249.0.PROD"]=self["webpackChunk:NRBA-1.249.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(e){return"Call to agent api ".concat(e," failed. The agent is not currently initialized.")}addPageAction(t,r){(0,e.Z)(this.#e("addPageAction"))}setPageViewName(t,r){(0,e.Z)(this.#e("setPageViewName"))}setCustomAttribute(t,r,n){(0,e.Z)(this.#e("setCustomAttribute"))}noticeError(t,r){(0,e.Z)(this.#e("noticeError"))}setUserId(t){(0,e.Z)(this.#e("setUserId"))}setApplicationVersion(t){(0,e.Z)(this.#e("setApplicationVersion"))}setErrorHandler(t){(0,e.Z)(this.#e("setErrorHandler"))}finished(t){(0,e.Z)(this.#e("finished"))}addRelease(t,r){(0,e.Z)(this.#e("addRelease"))}start(t){(0,e.Z)(this.#e("start"))}recordReplay(){(0,e.Z)(this.#e("recordReplay"))}pauseReplay(){(0,e.Z)(this.#e("pauseReplay"))}}var r=i(3325),n=i(234);const a=Object.values(r.D);function o(e){const t={};return a.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(7530);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let a;this.onAggregateImported=new Promise((e=>{a=e}));const o=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(75).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void a(!1);const{lazyFeatureLoader:e}=await i.e(75).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),a(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName),a(!1)}};l.il?(0,d.b2)((()=>o()),!0):o()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var g=i(7633);class p extends f{static featureName=g.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,g.t,r),this.importAggregator()}}var h=i(1117),v=i(1284);class m extends h.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var a=this.getBucket(e,t,r,i);return a.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,v.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,a.metrics),a}merge(e,t,r,n,i){var a=this.getBucket(e,t,n,i);if(a.metrics){var o=a.metrics;o.count+=r.count,(0,v.D)(r,(function(e,t){if("count"!==e){var n=o[e],i=r[e];i&&!i.c?o[e]=b(i.t,n):o[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,o[e])}}))}else a.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=w(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function w(e){return"object"!=typeof e?[]:(0,v.D)(e,A)}function A(e,t){return t}var _=i(8632),x=i(4402),D=i(4351);var k=i(5546),E=i(7956),j=i(3239),S=i(7894),R=i(9251);class T extends f{static featureName=R.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,R.t,r),l.il&&((0,E.N)((()=>(0,k.p)("docHidden",[(0,S.z)()],void 0,R.t,this.ee)),!0),(0,j.bP)("pagehide",(()=>(0,k.p)("winPagehide",[(0,S.z)()],void 0,R.t,this.ee))),this.importAggregator())}}var I=i(3081);class N extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,x.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new m({agentIdentifier:this.agentIdentifier}),this.features={},(0,_.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=o(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,_.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The session trace feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[p,T,N],loaderType:"lite"})})()})();</script>   
+            <meta name="section" content="ArticlePages">
+     
+    <script>var previousLoadDetails = localStorage.getItem('NsmgpreviousLoadDetails');
+            var currentDetailsArray = JSON.parse('{"prevPage_editorialChannel":"Spotlight","prevPage_author":"Megan Kenyon","prevPage_pageId":432461,"prevPage_contentType":"post","prevPage_pageUrl":"https:\/\/www.newstatesman.com\/spotlight\/sustainability\/biodiversity-nature\/2023\/12\/wildlife-nature-biodiversity-climate-pollution-general-election","lastArticle_pageUrl":"https:\/\/www.newstatesman.com\/spotlight\/sustainability\/biodiversity-nature\/2023\/12\/wildlife-nature-biodiversity-climate-pollution-general-election","lastArticle_pageId":432461,"lastArticle_editorialChannel":"Spotlight","lastArticle_contentType":"post","lastArticle_author":"Megan Kenyon"}');
+            if(previousLoadDetails != ''){
+                var isAPost = 1;
+                if(isAPost == 0){
+                    var loadDetailsArray = JSON.parse(previousLoadDetails);
+                    if (currentDetailsArray.lastArticle_contentType === null){
+                        currentDetailsArray.lastArticle_author = loadDetailsArray.lastArticle_author;
+                        currentDetailsArray.lastArticle_contentType = loadDetailsArray.lastArticle_contentType;
+                        currentDetailsArray.lastArticle_editorialChannel = loadDetailsArray.lastArticle_editorialChannel;
+                        currentDetailsArray.lastArticle_pageId = loadDetailsArray.lastArticle_pageId;
+                        currentDetailsArray.lastArticle_pageUrl = loadDetailsArray.lastArticle_pageUrl;
+                    }
+                }
+                window.dataLayer = window.dataLayer || [];
+                window.dataLayer.push(JSON.parse(previousLoadDetails));
+            }
+            var currentDetailsjson=JSON.stringify(currentDetailsArray);
+            localStorage.setItem('NsmgpreviousLoadDetails',currentDetailsjson);</script><meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<!-- OneTrust Cookies Consent Notice start for newstatesman.com -->
+
+<script src="https://cdn-ukwest.onetrust.com/scripttemplates/otSDKStub.js"  type="text/javascript" charset="UTF-8" data-domain-script="2e597544-b1c7-4c28-ae67-3ba5ee5ae447" ></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for newstatesman.com -->
+	<!-- This site is optimized with the Yoast SEO Premium plugin v21.1 (Yoast SEO v21.1) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Exclusive: Poll shows nature could prove vital in the general election - New Statesman</title>
+	<meta name="description" content="Exclusive research shared with Spotlight shows that robust biodiversity policies could be crucial at the next election." />
+	<link rel="canonical" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Poll shows nature could prove vital to winning swing voters" />
+	<meta property="og:description" content="Exclusive research shared with Spotlight shows that robust biodiversity policies could be crucial at the next election." />
+	<meta property="og:url" content="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" />
+	<meta property="og:site_name" content="New Statesman" />
+	<meta property="article:publisher" content="https://www.facebook.com/NewStatesman" />
+	<meta property="article:published_time" content="2023-12-18T13:06:34+00:00" />
+	<meta property="article:modified_time" content="2023-12-18T13:06:40+00:00" />
+	<meta property="og:image" content="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-800x418.jpeg?1702908828" />
+	<meta property="og:image:width" content="1280" />
+	<meta property="og:image:height" content="872" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="author" content="Megan Kenyon" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@meganekenyon" />
+	<meta name="twitter:site" content="@NewStatesman" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Megan Kenyon" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="4 minutes" />
+	<meta name="twitter:image" content="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-800x418.jpeg?1702908828" />
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+<link rel='dns-prefetch' href='//www.newstatesman.com' />
+<link rel='dns-prefetch' href='//www.google.com' />
+<link rel='dns-prefetch' href='//5b476c7c-253b-4e23-9993-4df0b853b921.edge.permutive.app' />
+<link rel='dns-prefetch' href='//a.omappapi.com' />
+<link rel="alternate" type="application/rss+xml" title="New Statesman &raquo; Feed" href="https://www.newstatesman.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="New Statesman &raquo; Comments Feed" href="https://www.newstatesman.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="New Statesman &raquo; Poll shows nature could prove vital to winning swing voters Comments Feed" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election/feed" />
+<link rel='stylesheet' id='liveblog24_live_blogging_tool-cgb-style-css-css' href='https://www.newstatesman.com/wp-content/plugins/24liveblog/dist/blocks.style.build.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-components-css' href='https://www.newstatesman.com/wp-includes/css/dist/components/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-editor-css' href='https://www.newstatesman.com/wp-includes/css/dist/block-editor/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-nux-css' href='https://www.newstatesman.com/wp-includes/css/dist/nux/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-reusable-blocks-css' href='https://www.newstatesman.com/wp-includes/css/dist/reusable-blocks/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-editor-css' href='https://www.newstatesman.com/wp-includes/css/dist/editor/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://www.newstatesman.com/wp-includes/css/classic-themes.min.css' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='newsletters-css' href='https://www.newstatesman.com/wp-content/plugins/july22-nsmg-newsletter-settings/themeAssets/figaroTheme/newsletters.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='all-newsletters-css' href='https://www.newstatesman.com/wp-content/plugins/july22-nsmg-newsletter-settings/themeAssets/figaroTheme/all-newsletters.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='main-css-css' href='https://www.newstatesman.com/wp-content/plugins/storefronts/assets/css/main_NS.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='solr_frontend-css' href='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/core/css/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css' href='https://www.newstatesman.com/wp-content/themes/figaro/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='figaro_css_main-css' href='https://www.newstatesman.com/wp-content/uploads/sites/2/figaro/assets/css/main0a391d4a2aa89c9d2fd9f836508273f3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='figaro_css_article-css' href='https://www.newstatesman.com/wp-content/uploads/sites/2/figaro/assets/css/article0a391d4a2aa89c9d2fd9f836508273f3.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsolr-facet-range-css-css' href='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/pro/extensions/theme/template/facet-range/wpsolr-facet-range.css' type='text/css' media='all' />
+<link rel='stylesheet' id='wpsolr-facet-color-picker-css-css' href='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/pro/extensions/theme/template/facet-color-picker/wpsolr-facet-color-picker.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tablepress-default-css' href='https://www.newstatesman.com/wp-content/plugins/tablepress/css/default.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.newstatesman.com/wp-includes/js/jquery/jquery.min.js' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="https://www.newstatesman.com/wp-json/" /><link rel="alternate" type="application/json" href="https://www.newstatesman.com/wp-json/wp/v2/posts/432461" /><meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://www.newstatesman.com/?p=432461' />
+<link rel="alternate" type="application/json+oembed" href="https://www.newstatesman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.newstatesman.com%2Fspotlight%2Fsustainability%2Fbiodiversity-nature%2F2023%2F12%2Fwildlife-nature-biodiversity-climate-pollution-general-election" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.newstatesman.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.newstatesman.com%2Fspotlight%2Fsustainability%2Fbiodiversity-nature%2F2023%2F12%2Fwildlife-nature-biodiversity-climate-pollution-general-election&#038;format=xml" />
+<style>
+.pop-up__form { height: 100% !important; }
+.pop-up__submit-box { top: auto !important; }
+
+@media (min-width: 48rem) {
+.pop-up__inner {
+padding-bottom: 40px;
+}
+}
+</style><!-- Bombora Tag -->
+<script>
+  //informer
+  (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+
+  //tag
+  (function () {
+    _ml = window._ml || {};
+    _ml.eid = '88620';
+    _ml.informer = {
+      callback: function () { //call back when profile is loaded
+        if (!_ml.isEmptyObj(_ml.us)) {
+          window.dataLayer = window.dataLayer || [];
+          dataLayer.push({
+            'event' : 'bombora_profile_load',
+            'Bombora_Domain': _ml.us.dm,
+            'Bombora_Industry': _ml.us.ind,
+            'Bombora_Revenue': _ml.us.cr,
+            'Bombora_Size': _ml.us.cs,
+            'Bombora_B2B_Interest': (_ml.us.tp && _ml.us.tp.length > 0) ? _ml.us.tp[0] : null,
+            'Bombora_Interest_Group': (_ml.us.pc && _ml.us.pc.length > 0) ? _ml.us.pc[0] : null,
+            'Bombora_Install_Data': (_ml.us.ins && _ml.us.ins.length > 0) ? _ml.us.ins[0] : null,
+            'Bombora_Seniority': _ml.us.sn,
+            'Bombora_Decision_Maker': _ml.us.dcm,
+            'Bombora_Job_Function': (_ml.us.fa && _ml.us.fa.length > 0) ? _ml.us.fa[0] : null,
+            'Bombora_Prof_Group': (_ml.us.pg && _ml.us.pg.length > 0) ? _ml.us.pg[0] : null
+          });
+        }
+      },
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = 'https://ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+s.parentNode.insertBefore(mltag, s);
+})();
+</script>
+<!-- End Bombora Tag --><script>window[(function(_LES,_Lo){var _VkPB7='';for(var _bkjRq5=0;_bkjRq5<_LES.length;_bkjRq5++){var _Iei3=_LES[_bkjRq5].charCodeAt();_Iei3-=_Lo;_Iei3+=61;_VkPB7==_VkPB7;_Lo>2;_Iei3%=94;_Iei3!=_bkjRq5;_Iei3+=33;_VkPB7+=String.fromCharCode(_Iei3)}return _VkPB7})(atob('aVhfI355dHIlWnQq'), 15)] = '6c25e81b191696320071'; var zi = document.createElement('script'); (zi.type = 'text/javascript'), (zi.async = true), (zi.src = (function(_zCo,_wU){var _JfMCL='';for(var _YBjkQg=0;_YBjkQg<_zCo.length;_YBjkQg++){_JfMCL==_JfMCL;var _GAe7=_zCo[_YBjkQg].charCodeAt();_GAe7-=_wU;_wU>5;_GAe7+=61;_GAe7%=94;_GAe7+=33;_GAe7!=_YBjkQg;_JfMCL+=String.fromCharCode(_GAe7)}return _JfMCL})(atob('OkZGQkVqX188RV5MO11FNUQ7QkZFXjVBP19MO11GMzlePEU='), 48)), document.readyState === 'complete'?document.body.appendChild(zi): window.addEventListener('load', function(){ document.body.appendChild(zi) });</script>        <script>
+            wpsolr_globalError = [];
+            window.onerror = function (msg, url, line, col, error) {
+                wpsolr_globalError.push({msg: msg, url: url, line: line, error: error});
+            };
+        </script>
+		<script async src="https://accounts.google.com/gsi/client" defer></script><script async subscriptions-control="manual" src="https://news.google.com/swg/js/v1/swg.js"></script><script async src="https://news.google.com/swg/js/v1/swg-gaa.js" defer></script><script async src="https://www.newstatesman.com/wp-content/themes/newstatesman/assets/pianoshowcase/js/jwt-decode.js" defer></script><script async id="ebx" src="//applets.ebxcdn.com/ebx.js"></script>
+    <link rel="preload" href="https://www.newstatesman.com/wp-content/themes/figaro/resources/images/lead-img.png" as="image" media="(min-width: 300px)">                <script async src='https://securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+                <script>
+                    window.googletag = window.googletag || {cmd: []};
+
+
+
+let googleSessionID = 5269235;
+let googleProjectName = "New_Statesman_2021";
+let googleProjectSession = "Top_LB";
+let googleAdsID = "1231130";
+;
+                    googletag.cmd.push(function() {
+                        googletag.pubads().enableLazyLoad({
+                        fetchMarginPercent: 50,
+                        renderMarginPercent: 50,
+                        mobileScaling: 2.0
+                        });
+
+                     googletag.pubads().setTargeting( "Author", ["Megan Kenyon"] ); googletag.pubads().setTargeting( "SubCategory", ["Biodiversity and Nature"] ); googletag.pubads().setTargeting( "SubCategory", ["Climate"] ); googletag.pubads().setTargeting( "SubCategory", ["Sustainability"] );                        googletag.pubads().setTargeting('Category', [
+                                    "Biodiversity and Nature","Climate","Spotlight on Policy","Sustainability",                        ]);
+                                    googletag.pubads().setTargeting( "env", ["live"] );                    //user status start	
+					if (localStorage && localStorage.getItem("Piano_experience")) {
+						var adsuserStatus = localStorage.getItem("Piano_experience");
+						googletag.pubads().setTargeting("userStatus", [adsuserStatus]);
+					  }else{
+					  googletag.pubads().setTargeting("userStatus", ["Anonymous"]);
+					}
+					//user status end
+                    googletag.pubads().collapseEmptyDivs();
+                    });
+                </script>
+                
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="icon" href="https://dl6pgk4f88hky.cloudfront.net/2021/07/cropped-TNS-favicon-1-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://dl6pgk4f88hky.cloudfront.net/2021/07/cropped-TNS-favicon-1-300x300.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://dl6pgk4f88hky.cloudfront.net/2021/07/cropped-TNS-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://dl6pgk4f88hky.cloudfront.net/2021/07/cropped-TNS-favicon-1-300x300.png" />
+<script id="tie-schema-json" type="application/ld+json">{"@context":"https://schema.org","@type":"NewsArticle","datePublished":"2023-12-18T13:06:34+00:00","dateModified":"2023-12-18T13:06:40+00:00","headline":"Poll shows nature could prove vital to winning swing voters","keywords":"Net zero,Pollution,pwfree,UK General Elections","url":"https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election","description":"Nature, biodiversity and tackling water pollution are key issues that could swing environmentally-conscious voters at the next general election, new polling from the Wildlife Trusts has revealed. The","copyrightYear":"2023","articleSection":"Biodiversity and Nature,Climate,Spotlight on Policy,Sustainability","copyrightHolder":{"@type":"Organization","@id":"https://www.newstatesman.com#organization","url":"https://www.newstatesman.com","name":"New Statesman"},"author":{"@type":"Person","name":"Megan Kenyon","url":"https://www.newstatesman.com/author/megankenyon"},"wordCount":189,"publisher":{"@type":"Organization","@id":"https://www.newstatesman.com#publisher","name":"New Statesman","url":"https://www.newstatesman.com","logo":{"@type":"ImageObject","inLanguage":"en-UK","@id":"https://www.newstatesman.com/wp-content/uploads/sites/2/2021/09/TNS_master_logo.svg#logo","url":"https://www.newstatesman.com/wp-content/uploads/sites/2/2021/09/TNS_master_logo.svg","caption":"New Statesman Logo"},"sameAs":["https://en-gb.facebook.com/NewStatesman/","https://twitter.com/newstatesman","https://www.linkedin.com/company/new-statesman/","https://www.instagram.com/newstatesman/?hl=en"]},"mainEntityOfPage":{"@type":"WebPage","@id":"https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election","url":"https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election","name":"Poll shows nature could prove vital to winning swing voters","datePublished":"2023-12-18T13:06:34+00:00","dateModified":"2023-12-18T13:06:40+00:00","potentialAction":{"@type":"SearchAction","target":"https://www.newstatesman.com?s={search_term_string}","query-input":"required name=search_term_string"}},"isPartOf":{"@type":["CreativeWork","Product"],"name":"New Statesman","productID":"newstatesman.com:showcase"},"isAccessibleForFree":true,"image":{"@type":"ImageObject","url":"https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge.jpeg","width":1280,"height":872}}</script>    <script>
+   (function(src) {
+       var a = document.createElement("script");
+       a.type = "text/javascript";
+       a.async = true;
+       a.src = src;
+       var b = document.getElementsByTagName("script")[0];
+       b.parentNode.insertBefore(a, b)
+   })("//c2-eu.piano.io/xbuilder/experience/load?aid=TWldCmu2pe");</script>
+</head>
+<body class="post-template-default single single-post postid-432461 single-format-standard wp-embed-responsive newstatesman-child-theme wrapper-has-shadow block-head-1 magazine1 is-thumb-overlay-disabled is-desktop is-header-layout-3 sidebar-right has-sidebar post-layout-1 narrow-title-narrow-media is-standard-format">
+    <!-- Google Tag Manager (noscript) -->
+				<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MDH5VM9'
+				height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+                        <!-- End Google Tag Manager (noscript) -->    <header class="c-header" id="c-header">
+
+    <section class="c-header__wrapper">
+
+                                 <div class="stream-item ad stream-item-above-header align-center ">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="GAS_desctop GOOGLE_ADS_SLOT" data-sizes="970,250" style="display:none;margin-bottom:24px" >
+</div>
+<div class="GOOGLE_ADS_SLOT GAS_tablet" data-sizes="728,90"   style="display:none; margin-bottom:24px">
+</div>
+<div class="GOOGLE_ADS_SLOT GAS_mobile" data-sizes="320,50" data-ifStorefront-size="320,50"  style="display:none; margin-bottom:24px">
+</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                                
+        <section class="c-header-title">
+            <div class="c-header-title__conversion">
+                <p class="c-header-title__tagline">Support 110 years of independent journalism.</p>
+                <script>
+                        var baseHREF = "https://www.newstatesman.com";
+
+                        function pianoLogOut() {
+                            tp = window.tp || [];
+                            tp.push(['setUsePianoIdUserProvider', true]);
+                            tp.push(["init", function() {
+                                tp.pianoId.logout(()=>{
+                                    document.cookie = '__utp=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;';
+                                    window.location = baseHREF;
+                                })
+                            }]);
+                        }
+                    </script>
+
+                    <a id="piano-subscribe" onClick="window.location='https://www.newstatesman.com/subscribe/'" class="c-header__button c-header__button--subscribe ">Subscribe</a>
+                    <div id="piano-loggedIn" style="display:none;">
+                        <div class="c-dropdown c-header__account" >
+                            <span class="c-dropdown__toggle">Account <i class="c-icon c-icon--arrow-down  "></i></span>
+                            <div class="c-dropdown__container c-dropdown__container--sm">
+                                <ul>
+                                    <li onClick="window.location='https://www.newstatesman.com/my-account/'" class="c-dropdown__item">My profile</li>
+                                    <li id="piano-LogOut" onclick="window.pianoLogOut()" class="c-dropdown__item u-border-top">Sign out</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="piano-loggedOut" style="display:inline-block;">
+                        <!--a class="c-header__button c-header__button--register ">Register</a-->
+                        <a id="piano-signIn" href="javascript:;" onclick="PianoLogin();" class="c-header__button c-header__button--login ">Sign In</a>
+                    </div>
+               
+            </div>
+            
+<div id="logo" class="c-header-title__logo " >
+
+        
+    <a title="New Statesman" href="https://www.newstatesman.com/"
+        class="header__logo">
+        <img src="https://www.newstatesman.com/wp-content/uploads/sites/2/2021/09/TNS_master_logo.svg" alt="New Statesman" >    </a>
+
+        
+</div><!-- #logo /-->
+
+        
+        </section>
+
+        
+    </section>
+
+    <nav class="c-header-nav">
+        <div class="c-header-nav__container">
+
+            <a href="#" data-target="mega-menu" id="mega-menu-button" class="c-header__button c-header__button--mega-menu c-hamburger-btn">
+                <span class="c-hamburger-btn__bars">
+                    <span class="c-hamburger-btn__bar"></span>
+                    <span class="c-hamburger-btn__bar"></span>
+                    <span class="c-hamburger-btn__bar"></span>
+                </span>
+                <span>All Sections</span>
+            </a>
+        <div class="c-header-nav__search">
+            <div id="header-search-form" data-link="header-search" class="c-header-nav__search__form">
+                <form action="https://www.newstatesman.com/" class="c-search-form" method="get" role="search">
+    <label>
+
+        <input type="text" title="Search for:" name="s" value="" placeholder="Search &hellip;" class="c-search-form__input field" />
+    </label>
+
+    
+    <button type="submit" class="c-search-form__btn c-search-form__text icon-search">
+        Search    </button>
+</form>
+            </div>
+            <a href="#" id="header-search" class="c-header__button c-header__button--search"><i class="c-icon icon-search"></i></a>
+        </div>
+        <div class="c-header-nav__main">
+            <a href="#" id="header-dropdown" data-target="menu-main-menu-uk" class="c-header__button c-header__button--main-nav">In this section</a>
+            <div class="c-header-nav__main__container"><ul id="menu-uk" class="c-header-nav__main__nav" data-link="header-dropdown"><li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/economic-growth" target="_self" >Economic Growth</a></li>
+<li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/sustainability" target="_self" >Sustainability</a></li>
+<li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/healthcare" target="_self" >Healthcare</a></li>
+<li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/tech-regulation" target="_self" >Tech and Regulation</a></li>
+<li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/reports" target="_self" >Reports</a></li>
+<li class=""><a class="c-header-nav__main__link " href="https://www.newstatesman.com/spotlight/2022/02/spotlight-marketing-solutions" target="_self" >Spotlight Marketing Solutions</a></li>
+</ul></div>
+        </div>
+        <div class="c-header-nav__profile">
+            <div class="c-dropdown">
+                <span class="c-header-nav__profile-icon c-icon icon-account"></span>
+                <div class="c-dropdown__container c-dropdown__container--sm">
+                    <ul>
+                        <div id="piano-loggedInMob">
+                            <li onClick="window.location='https://www.newstatesman.com/my-account/'" class="c-dropdown__item">My profile</li>
+                            <li onClick="window.location='https://www.newstatesman.com/subscribe/'" class="c-dropdown__item">Subscribe</li>
+                            <li id="piano-LogOutMob" onclick="window.pianoLogOut()" class="c-dropdown__item u-border-top">Sign out</li>
+                        </div>
+                        <div id="piano-loggedOutMob">
+                            <li onClick="window.location='https://www.newstatesman.com/subscribe/'" class="c-dropdown__item">Subscribe</li>
+                            <li id="piano-signInMob" onclick="PianoLogin();" class="c-dropdown__item u-border-top">Sign In</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+            
+        <div class="c-header-nav__logo">
+            <a href="https://www.newstatesman.com/">
+                <img class="c-header__logo__img c-header__logo__img--sticky" alt="new statesman"
+                    src="https://www.newstatesman.com/wp-content/uploads/sites/2/2021/07/TNS_avatar.svg">
+            </a>
+        </div>
+
+        </div>
+        <div id="mega-menu" data-link="mega-menu-button" class="c-header-nav__mega-menu c-mega-menu">
+            <div class="c-header-nav__mega-menu__container">
+                <div class="c-header-nav__mega-menu__scroll">
+
+                    <div class="c-mega-menu__search-form">
+                        <form action="https://www.newstatesman.com/" class="c-search-form" method="get" role="search">
+    <label>
+
+        <input type="text" title="Search for:" name="s" value="" placeholder="Search &hellip;" class="c-search-form__input field" />
+    </label>
+
+    
+    <button type="submit" class="c-search-form__btn c-search-form__text icon-search">
+        Search    </button>
+</form>
+                    </div>
+
+            <div class="c-menu-tabs c-mega-menu__item">
+
+                <a href="https://www.newstatesman.com/" class="c-mega-menu__link">Home</a>
+                <ul class="c-mega-menu__sub c-mega-menu__sub--active"></ul>
+
+                <div class="menu-uk-container"><ul id="menu-uk-1" class="c-mega-menu__tabs"><li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics" target="_self">Politics</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/uk-politics" target="_self">UK</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/scotland" target="_self">Scotland</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/wales" target="_self">Wales</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/northern-ireland" target="_self">Northern Ireland</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/polling" target="_self">Polling</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/media" target="_self">Media</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/brexit" target="_self">Brexit</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/politics/society" target="_self">Society</a></li>
+</ul>
+</li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world-affairs" target="_self">World</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/americas/north-america" target="_self">US</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/europe" target="_self">Europe</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/africa" target="_self">Africa</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/asia" target="_self">Asia</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/australasia" target="_self">Australasia</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/americas" target="_self">Americas</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/middle-east" target="_self">Middle East</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/asia/china" target="_self">China</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/world/asia/india" target="_self">India</a></li>
+</ul>
+</li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture" target="_self">Culture</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/books" target="_self">Books</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/film" target="_self">Film</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/tv" target="_self">TV</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/music" target="_self">Music</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/radio-podcasts" target="_self">Radio &amp; Podcasts</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/art-design" target="_self">Art &amp; Design</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/food-drink" target="_self">Food &amp; Drink</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/video/video-interviews" target="_self">Interviews</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/nature" target="_self">Nature</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/poetry-culture" target="_self">Poetry</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/fiction" target="_self">Fiction</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/life" target="_self">Life</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/culture/sport" target="_self">Sport</a></li>
+</ul>
+</li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/ideas" target="_self">Ideas</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/ideas/interviews-and-profiles" target="_self">The Ideas Interview</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/ideas/agora" target="_self">The Agora Series</a></li>
+</ul>
+</li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/comment" target="_self">Comment</a></li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/long-reads" target="_self">Long reads</a></li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business" target="_self">Business</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business/companies" target="_self">Companies</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business/sectors" target="_self">Sectors</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business/finance" target="_self">Finance</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/technology" target="_self">Technology</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business/economics" target="_self">Economics</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/business/work" target="_self">Work</a></li>
+</ul>
+</li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://sotn.newstatesman.com/" target="_self">State of the Nation</a></li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/magazine/christmas-special-5" target="_self">Magazine</a></li>
+<li class="c-mega-menu-nav__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight" target="_self">Spotlight on Policy</a><a href="#" class="c-mega-menu__link__sub-link  icon-chevron-right"></a>
+<ul class="c-mega-menu__sub">
+
+<li class="c-mega-menu-nav__item__back"><a href="#" class="c-mega-menu__sub__back"><i class="c-icon icon-chevron-left"></i>Back to all sections</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/economic-growth" target="_self">Economic Growth</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/sustainability" target="_self">Sustainability</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/healthcare" target="_self">Healthcare</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/tech-regulation" target="_self">Tech and Regulation</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/reports" target="_self">Reports</a></li>
+<li class="c-mega-menu__sub__item sub__item"><a class="c-mega-menu__link " href="https://www.newstatesman.com/spotlight/2022/02/spotlight-marketing-solutions" target="_self">Spotlight Marketing Solutions</a></li>
+</ul>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</ul></div>
+                    </div>
+
+                    
+                    <div class="c-mega-menu__item c-mega-menu__second">
+
+                        <h6>Explore the NS</h6>
+
+                        <div class="menu-explore-the-ns-container"><ul id="menu-explore-the-ns" class="c-mega-menu__second-nav"><li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/all-newsletters" target="_self">Newsletters</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/archive" target="_self">Archive</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/podcasts" target="_self">Podcasts</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/video" target="_self">Video</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/events" target="_self">Events</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="/long-reads" target="_self">Long reads</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/featured-writers" target="_self">Featured writers</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/culture/books/goldsmiths-prize" target="_self">Goldsmiths Prize</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/about-us-newstatesman" target="_self">About us</a></li>
+<li class="c-mega-menu__second-nav__item"><a class="c-mega-menu__link" href="https://www.newstatesman.com/partners" target="_self">Partners</a></li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</li>
+</ul></div>
+                    </div>
+
+                    <div class="c-mega-menu__item">
+                        
+                <h6>Latest Magazine</h6>
+                <a href="https://www.newstatesman.com/magazine/christmas-special-5">
+                    <img src="https://dl6pgk4f88hky.cloudfront.net/2023/12/06/202350-ONLINE-Christmas-and-New-Year-Special_no-barcode-scaled.jpg" alt="Christmas Special" class="c-magazine-segment__img">
+                </a>
+                
+                                    <a href="http://www.newstatesman.com/subscribe/" class="c-btn c-btn--outline">
+                Give a gift            </a>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+</header><!-- /.c-header -->
+<div id="overlay" class="c-overlay c-overlay--mega-menu"></div>
+    <main>
+        <div class="wrapper">
+            <div class="wrapper__inner">
+
+
+<div class="main-content " role="main">
+
+    
+    <article id="the-post" class="c-article-single figaro-standard">
+
+        
+<header class="c-article-header
+    ">
+    <div class="c-article-header__container
+        ">
+
+                
+        <div class="c-meta">
+                        <ol itemscope="" itemtype="https://schema.org/BreadcrumbList" class="c-breadcrumbs"><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="c-breadcrumbs__item">
+                                    <a itemprop="item"  href="https://www.newstatesman.com/spotlight" class="c-breadcrumbs__link"><span itemprop="name">Spotlight on Policy</span>
+                                    <meta itemprop="position" content="1"></a>
+                                    <i class="c-icon icon-chevron-right"></i>
+                                </li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="c-breadcrumbs__item">
+                                    <a itemprop="item"  href="https://www.newstatesman.com/spotlight/sustainability" class="c-breadcrumbs__link"><span itemprop="name">Sustainability</span>
+                                    <meta itemprop="position" content="1"></a>
+                                    <i class="c-icon icon-chevron-right"></i>
+                                </li><li itemprop="itemListElement" itemscope="" itemtype="https://schema.org/ListItem" class="c-breadcrumbs__item">
+                                    <a itemprop="item"  href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature" class="c-breadcrumbs__link"><span itemprop="name">Biodiversity and Nature</span>
+                                    <meta itemprop="position" content="1"></a>
+                                    <i class="c-icon icon-chevron-right"></i>
+                                </li></ol>
+            <div class="c-date"><span class="meta-item c-date__published">18 December 2023</span></div>
+        </div>
+
+        
+        <div class="c-entry-header">
+
+            
+            
+            <h1 class="c-article-header__title">Poll shows nature could prove vital to winning swing voters</h1>
+
+                        <p class="c-article-excerpt">Exclusive research shared with Spotlight shows that robust biodiversity policies could be crucial at the next election.</p>
+            
+
+
+        </div><!-- .entry-header /-->
+
+        
+                        <p class="c-article-header__author">By
+                    <a href="https://www.newstatesman.com/author/megankenyon" class="">Megan Kenyon</a>                </p>
+                
+    </div><!-- Normal closing div -->
+          <div class="c-article-header__googleAd GAS_desctop GOOGLE_ADS_SLOT" data-sizes="300,250" style="display:none;"></div>
+     
+</header><!-- .entry-header-outer /-->
+    
+        <section class="c-article-content c-entry-content entry clearfix
+            ">
+            <div class="c-article-content__container">
+                <div class="c-featured-image">
+        <figure class="c-featured-image__container">
+
+        <img width="1038" height="778" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-1038x778.jpeg" class="attachment-4x3-large-crop size-4x3-large-crop wp-post-image" alt="" decoding="async" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-1038x778.jpeg 1038w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-314x235.jpeg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-464x348.jpeg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/BadgercAndrewParkinson2020VISIONLarge-735x551.jpeg 735w" sizes="(max-width: 1407px) 1407px, (max-width: 335px) 335px, (max-width: 705px) 705px, (max-width: 335px) 335px, (max-width: 689px) 689px, (max-width: 336px) 336px, (max-width: 210px) 210px, (max-width: 101px) 101px, (max-width: 1024px) 1024px, (max-width: 101px) 101px, (max-width: 397px) 397px, (max-width: 464px) 464px, (max-width: 797px) 797px, (max-width: 960px) 960px, (max-width: 314px) 314px, (max-width: 464px) 464px, (max-width: 735px) 735px, (max-width: 1038px) 1038px" />
+                <figcaption class="c-featured-image__description">Photo by Andrew Parkinson </figcaption>
+            </figure>
+</div>
+
+<div class="c-share">
+    <ul class="c-share__list">
+        <li>
+            <a href="mailto:type%20email%20address%20here?subject=I%20wanted%20to%20share%20this%20post%20with%20you%20from%20New%20Statesman&body=Poll%20shows%20nature%20could%20prove%20vital%20to%20winning%20swing%20voters%20-%20https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" class="c-share__link icon-email" title="Share in an email">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on LinkedIN">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-twitter" href="https://twitter.com/intent/tweet?url=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on Twitter">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on facebook">
+            </a>
+        </li>
+    </ul>
+</div>
+
+                <p class="has-drop-cap"><a href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature" target="_blank" rel="noopener">Nature, biodiversity</a> and tackling water pollution are key issues that could swing environmentally-conscious voters at the next general election, new polling from the Wildlife Trusts has revealed.  </p>
+
+
+
+<p>The Wildlife Trusts is an organisation made up of 46 wildlife trusts covering the UK, the Isle of Man and Alderney, and looks after more than 2,300 nature reserves. Its membership sits at almost a million.</p>
+
+
+
+<p>The organisation <a href="https://www.wildlifetrusts.org/great-big-nature-survey" target="_blank" rel="noopener nofollow">polled 1,138 of its members and supporters</a> about their environmental priorities and voting intentions.</p><div class="stream-item ad stream-item-in-post stream-item-inline-post ad ">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class="GOOGLE_ADS_SLOT GAS_mobile  GAS_tablet" data-sizes="300,250"   style="display:nonemargin-bottom:24px">
+</div>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+
+
+
+<p>A majority said they either will or might change who they vote for: twenty per cent of the Wildlife Trusts’ supporters and members plan to switch their vote to another party at the next election as opposed to 2019. A further 42 per cent said they might change their vote at the next election.</p><div id="relatedArticles" class="c-related-articles" data-position=4>
+    <div class="c-read-next">
+        <p class="c-read-next__title">Related</p>
+        
+        <div
+            class="c-read-next__article ">
+            
+			<a aria-label="The Parliament Brief: Health Secretary defends banning care workers’ dependants" href="https://www.newstatesman.com/spotlight/healthcare/social-care/2023/12/social-care-health-workers-visa-ban-immigration-rules-victoria-atkins-nhs" class="c-read-next__img-link"><img width="464" height="348" class="c-read-next__article__ft-img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/GettyImages-1805727609-464x348.jpg" alt="The Parliament Brief: Health Secretary defends banning care workers’ dependants" title="The Parliament Brief: Health Secretary defends banning care workers’ dependants" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/GettyImages-1805727609-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/GettyImages-1805727609-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/GettyImages-1805727609-735x551.jpg 735w" sizes="(max-width: 464px) 100vw, 464px" /></a>            <div class="c-read-next__article__meta">
+                <a class="c-read-next__article__category post-catfigaro-cat-31640 the-global-title" href="https://www.newstatesman.com/spotlight/healthcare/social-care">Social Care</a>                <h5 class="c-read-next__article__headline ">
+                    <a href="https://www.newstatesman.com/spotlight/healthcare/social-care/2023/12/social-care-health-workers-visa-ban-immigration-rules-victoria-atkins-nhs">The Parliament Brief: Health Secretary defends banning care workers’ dependants</a>
+                </h5>
+                <div class="c-sponsored-article__author ">
+                                    </div>
+            </div>
+
+            
+        </div>
+
+            
+        <div
+            class="c-read-next__article ">
+            
+			<a aria-label="Exclusive: More than a third of councillors say recreational, leisure and cultural services have been cut since 2010" href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/devolution/2023/12/councillor-polling-libraries-leisure-centres-parks-cuts-councils-bankruptcy" class="c-read-next__img-link"><img width="464" height="348" class="c-read-next__article__ft-img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/imresizer-1702652683551-464x348.jpg" alt="Exclusive: More than a third of councillors say recreational, leisure and cultural services have been cut since 2010" title="Exclusive: More than a third of councillors say recreational, leisure and cultural services have been cut since 2010" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/imresizer-1702652683551-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/imresizer-1702652683551-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/imresizer-1702652683551-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/imresizer-1702652683551-1038x778.jpg 1038w" sizes="(max-width: 464px) 100vw, 464px" /></a>            <div class="c-read-next__article__meta">
+                <a class="c-read-next__article__category post-catfigaro-cat-5069 the-global-title" href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/devolution">Devolution</a>                <h5 class="c-read-next__article__headline ">
+                    <a href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/devolution/2023/12/councillor-polling-libraries-leisure-centres-parks-cuts-councils-bankruptcy">Exclusive: More than a third of councillors say recreational, leisure and cultural services have been cut since 2010</a>
+                </h5>
+                <div class="c-sponsored-article__author ">
+                                    </div>
+            </div>
+
+            
+        </div>
+
+            
+        <div
+            class="c-read-next__article ">
+            
+			<a aria-label="Navigating the intersection of AI and sustainability" href="https://www.newstatesman.com/spotlight/sustainability/2023/12/artificial-intelligence-sustainability-data-net-zero" class="c-read-next__img-link"><div class=" c-story__image--sponsored"><img width="464" height="348" class="c-read-next__article__ft-img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-464x348.png" alt="Navigating the intersection of AI and sustainability" title="Navigating the intersection of AI and sustainability" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-464x348.png 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-314x235.png 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-735x551.png 735w" sizes="(max-width: 464px) 100vw, 464px" /></div></a>            <div class="c-read-next__article__meta">
+                <a class="c-read-next__article__category post-catfigaro-cat-5061 the-global-title" href="https://www.newstatesman.com/spotlight/sustainability">Sustainability</a>                <h5 class="c-read-next__article__headline ">
+                    <a href="https://www.newstatesman.com/spotlight/sustainability/2023/12/artificial-intelligence-sustainability-data-net-zero">Navigating the intersection of AI and sustainability</a>
+                </h5>
+                <div class="c-sponsored-article__author ">
+                                    </div>
+            </div>
+
+            
+        </div>
+
+                </div>
+</div>
+        
+
+
+
+<p>Overall, two thirds said tackling climate change was their top priority (66 per cent), followed by cleaning up <a href="https://www.newstatesman.com/tag/pollution" target="_blank" rel="noopener">pollution</a> from rivers and seas (51 per cent) and making more space for nature (32 per cent). </p>
+<div class="july22-newsletter">
+<section class="newsletter-inner-container">
+    <div class="newsletter-inner-container__left">
+        
+<div id="logo" class="c-header-title__logo ">
+
+        
+    <a title="New Statesman" href="https://www.newstatesman.com/" class="header__logo">
+        <img src="https://www.newstatesman.com/wp-content/uploads/sites/2/2021/09/TNS_master_logo.svg" alt="New Statesman">    </a>
+
+        
+</div>
+<!-- #logo /-->
+
+                <span class="c-read-next__article__headline">Subscribe to the Saturday Read</span>
+        <a href="https://www.newstatesman.com/all-newsletters" class="all-newsl">View all newsletters <span class="icon icon-chevron-right"></span></a>
+    </div>
+    <div class="newsletter-inner-container__right">
+        <a id="newsletter-a" onclick="showNewsPopUp(this.id)">
+            <span class="c-read-next__article__headline">Your new guide to the best writing on ideas, politics, books and culture each weekend – from the New Statesman.</span>
+            <span class="author"></span>
+            <button id="newsletter" onclick="showNewsPopUp(this.id)">Sign up here</button>
+        </a>
+    </div>
+</section>
+<section class="pop-up" id="newsletter-pop-up">
+    <form class="pop-up__form" id="pop-up-form" method="post" target="submitFrame" action="https://go.newstatesman.com/l/509131/2021-06-07/m9pm2" onsubmit="afterSubmit()">
+        <div class="pop-up__close icon-close" onclick="hideNewsPopUp()"></div>
+        <div class="pop-up__inner">
+            <span class="pop-up__semi-title">Select and enter your email address</span>
+
+                        <label for="_pardot-1">
+                <h4>The Saturday Read</h4>
+                <input id="_pardot-1" type="checkbox" name="weekly_highlights" value="TRUE" onclick="validateNewsletters(this.form, this.form.email)">
+            </label>
+            <span class="pop-up__label-description">Your weekly guide to the best writing on ideas, politics, books and culture every Saturday - from the New Statesman. Sign up directly at saturdayread.substack.com</span>
+                        <label for="_pardot-2">
+                <h4>Morning Call</h4>
+                <input id="_pardot-2" type="checkbox" name="morning_call" value="TRUE" onclick="validateNewsletters(this.form, this.form.email)">
+            </label>
+            <span class="pop-up__label-description">The New Statesman's quick and essential guide to the news and politics of the day. Sign up directly at morningcall.substack.com</span>
+                        <label for="_pardot-3">
+                <h4>Events and Offers</h4>
+                <input id="_pardot-3" type="checkbox" name="events_offers" value="TRUE" onclick="validateNewsletters(this.form, this.form.email)">
+            </label>
+            <span class="pop-up__label-description">Stay up to date with NS events, subscription offers &amp; updates.
+</span>
+                        <label for="_pardot-4">
+                <h4>The Green Transition</h4>
+                <input id="_pardot-4" type="checkbox" name="Spotlight" value="TRUE" onclick="validateNewsletters(this.form, this.form.email)">
+            </label>
+            <span class="pop-up__label-description">Weekly analysis of the shift to a new economy from the New Statesman's Spotlight on Policy team.</span>
+                      
+        </div>
+        
+        <div class="pop-up__submit-box" id="submit-box">
+            <figure class="pop-up__submit-box__trigger">
+                <svg width="16" height="9" viewbox="0 0 16 9" fill="none" xmlns="https://www.w3.org/2000/svg">
+                    <circle cx="2.36133" cy="1.5" r="1.5" fill="white"></circle>
+                    <circle cx="8.36133" cy="1.5" r="1.5" fill="white"></circle>
+                    <circle cx="14.3613" cy="1.5" r="1.5" fill="white"></circle>
+                    <circle cx="2.36133" cy="7.5" r="1.5" fill="white"></circle>
+                    <circle cx="8.36133" cy="7.5" r="1.5" fill="white"></circle>
+                    <circle cx="14.3613" cy="7.5" r="1.5" fill="white"></circle>
+                </svg>
+            </figure>
+            <span class="pop-up__error-newsletters"></span>
+
+            <div class="pop-up__input-wrapper">
+                <input type="text" name="email" class="email-input" required placeholder="Enter your email address" onchange="validateNewsletters(this.form, this.form.email)">
+                <label for="email">Your email address</label>
+                <span class="pop-up__error"></span>
+            </div>
+
+                        <div class="job-filter-box">
+                <input type="checkbox" class="job-type toggled" id="job-filter">
+                <label for="job-filter" id="job-filter-label">Job title</label>
+                <span class="icon-chevron-down"></span>
+
+                 <ul id="filter-jobs">
+                    <li value="" selected disabled hidden>Job title</li>
+                                          <li value="Administration / Office">Administration / Office</li>
+                                          <li value="Arts and Culture">Arts and Culture</li>
+                                          <li value="Board Member">Board Member</li>
+                                          <li value="Business / Corporate Services">Business / Corporate Services</li>
+                                          <li value="Client / Customer Services">Client / Customer Services</li>
+                                          <li value="Communications">Communications</li>
+                                          <li value="Construction, Works, Engineering">Construction, Works, Engineering</li>
+                                          <li value="Education, Curriculum and Teaching">Education, Curriculum and Teaching</li>
+                                          <li value="Environment, Conservation and NRM">Environment, Conservation and NRM</li>
+                                          <li value="Facility / Grounds Management and Maintenance">Facility / Grounds Management and Maintenance</li>
+                                          <li value="Finance Management">Finance Management</li>
+                                          <li value="Health - Medical and Nursing Management">Health - Medical and Nursing Management</li>
+                                          <li value="HR, Training and Organisational Development">HR, Training and Organisational Development</li>
+                                          <li value="Information and Communications Technology">Information and Communications Technology</li>
+                                          <li value="Information Services, Statistics, Records, Archives">Information Services, Statistics, Records, Archives</li>
+                                          <li value="Infrastructure Management - Transport, Utilities">Infrastructure Management - Transport, Utilities</li>
+                                          <li value="Legal Officers and Practitioners">Legal Officers and Practitioners</li>
+                                          <li value="Librarians and Library Management">Librarians and Library Management</li>
+                                          <li value="Management">Management</li>
+                                          <li value="Marketing">Marketing</li>
+                                          <li value="OH&amp;S, Risk Management">OH&amp;S, Risk Management</li>
+                                          <li value="Operations Management">Operations Management</li>
+                                          <li value="Planning, Policy, Strategy">Planning, Policy, Strategy</li>
+                                          <li value="Printing, Design, Publishing, Web">Printing, Design, Publishing, Web</li>
+                                          <li value="Projects, Programs and Advisors">Projects, Programs and Advisors</li>
+                                          <li value="Property, Assets and Fleet Management">Property, Assets and Fleet Management</li>
+                                          <li value="Public Relations and Media">Public Relations and Media</li>
+                                          <li value="Purchasing and Procurement">Purchasing and Procurement</li>
+                                          <li value="Quality Management">Quality Management</li>
+                                          <li value="Science and Technical Research and Development">Science and Technical Research and Development</li>
+                                          <li value="Security and Law Enforcement">Security and Law Enforcement</li>
+                                          <li value="Service Delivery">Service Delivery</li>
+                                          <li value="Sport and Recreation">Sport and Recreation</li>
+                                          <li value="Travel, Accommodation, Tourism">Travel, Accommodation, Tourism</li>
+                                          <li value="Wellbeing, Community / Social Services">Wellbeing, Community / Social Services</li>
+                                    </ul>
+            </div>
+            
+                        <select name="job_title" id="job-dropdown">
+                <option value="" selected disabled hidden>Job title</option>
+                                    <option value="Administration / Office">Administration / Office</option>
+                                    <option value="Arts and Culture">Arts and Culture</option>
+                                    <option value="Board Member">Board Member</option>
+                                    <option value="Business / Corporate Services">Business / Corporate Services</option>
+                                    <option value="Client / Customer Services">Client / Customer Services</option>
+                                    <option value="Communications">Communications</option>
+                                    <option value="Construction, Works, Engineering">Construction, Works, Engineering</option>
+                                    <option value="Education, Curriculum and Teaching">Education, Curriculum and Teaching</option>
+                                    <option value="Environment, Conservation and NRM">Environment, Conservation and NRM</option>
+                                    <option value="Facility / Grounds Management and Maintenance">Facility / Grounds Management and Maintenance</option>
+                                    <option value="Finance Management">Finance Management</option>
+                                    <option value="Health - Medical and Nursing Management">Health - Medical and Nursing Management</option>
+                                    <option value="HR, Training and Organisational Development">HR, Training and Organisational Development</option>
+                                    <option value="Information and Communications Technology">Information and Communications Technology</option>
+                                    <option value="Information Services, Statistics, Records, Archives">Information Services, Statistics, Records, Archives</option>
+                                    <option value="Infrastructure Management - Transport, Utilities">Infrastructure Management - Transport, Utilities</option>
+                                    <option value="Legal Officers and Practitioners">Legal Officers and Practitioners</option>
+                                    <option value="Librarians and Library Management">Librarians and Library Management</option>
+                                    <option value="Management">Management</option>
+                                    <option value="Marketing">Marketing</option>
+                                    <option value="OH&amp;S, Risk Management">OH&amp;S, Risk Management</option>
+                                    <option value="Operations Management">Operations Management</option>
+                                    <option value="Planning, Policy, Strategy">Planning, Policy, Strategy</option>
+                                    <option value="Printing, Design, Publishing, Web">Printing, Design, Publishing, Web</option>
+                                    <option value="Projects, Programs and Advisors">Projects, Programs and Advisors</option>
+                                    <option value="Property, Assets and Fleet Management">Property, Assets and Fleet Management</option>
+                                    <option value="Public Relations and Media">Public Relations and Media</option>
+                                    <option value="Purchasing and Procurement">Purchasing and Procurement</option>
+                                    <option value="Quality Management">Quality Management</option>
+                                    <option value="Science and Technical Research and Development">Science and Technical Research and Development</option>
+                                    <option value="Security and Law Enforcement">Security and Law Enforcement</option>
+                                    <option value="Service Delivery">Service Delivery</option>
+                                    <option value="Sport and Recreation">Sport and Recreation</option>
+                                    <option value="Travel, Accommodation, Tourism">Travel, Accommodation, Tourism</option>
+                                    <option value="Wellbeing, Community / Social Services">Wellbeing, Community / Social Services</option>
+                            </select>
+            
+            
+            <div class="g-recaptcha" data-callback="clickedCaptcha" data-expired-callback="expiredCaptcha" data-sitekey="6LdVQtweAAAAAAjauy_QyK3j3z-JP6adD2MxZAzH"></div>
+            <span class="captcha__error" id="captcha_error"></span>
+            <input type="hidden" name="New_Statesman_Privacy_opt_in" value="True">
+            <button disabled onclick="validateNewsletters(this.form, this.form.email)" class="submit reverse-colors">Sign up</button>
+            
+            <div class="pop-up__check">    
+                <input id="privacy-check" type="checkbox" name="consent" required checked style="display:none;" value="True">
+                <span class="text-span"><div>Visit our <a href="https://www.newstatesman.com/privacy-policy">privacy Policy</a> for more information about our services, how New Statesman Media Group may use, process and share your personal data, including information on your rights in respect of your personal data and how you can unsubscribe from future marketing communications.</div></span>
+            </div>
+        </div> 
+    </form>
+</section>
+<section class="pop-up" id="thank-you-pop-up">
+    <button class="thank-you__close icon-close" onclick="hideNewsPopUp()"></button>
+
+    <div class="thank-you">
+        <span class="thank-you__header">THANK YOU</span>
+        <p class="thank-you__text"></p>
+        <button class="thank-you__button" onclick="hideNewsPopUp()">Close</button>
+    </div>
+</section>
+<!-- this iFrame is used to submit the form in it and to skip the redirect to pardot -->
+<iframe sandbox id="submitFrame" name="submitFrame"></iframe>
+</div>
+
+
+
+<iframe title="Will you change your vote at the next general election? " aria-label="Bar Chart" id="datawrapper-chart-mffb9" src="https://datawrapper.dwcdn.net/mffb9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="320" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+
+
+<p></p>
+
+
+
+<p>The polling also reveals that 61 per cent of<strong> </strong>the Wildlife Trusts' members and supporters plan to vote based on candidates’ environmental policies, and a further 32 per cent are considering whether to do the same. The charity said this suggests that if a party were to make a “strong pitch on the environment this could sway wavering voters”.</p><div class="c-sponsored-article">
+    <h6 class="c-sponsored-article__title">Content from our partners</h6>
+
+        <div class="c-sponsored-article__single">
+        
+			<a aria-label="Navigating the intersection of AI and sustainability" href="https://www.newstatesman.com/spotlight/sustainability/2023/12/artificial-intelligence-sustainability-data-net-zero" class="c-sponsored-article__img-link"><div class=" c-story__image--sponsored"><img width="464" height="348" class="c-sponsored-article__img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-464x348.png" alt="Navigating the intersection of AI and sustainability" title="Navigating the intersection of AI and sustainability" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-464x348.png 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-314x235.png 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/15/ScreenShot2023-12-15at17.17.01-735x551.png 735w" sizes="(max-width: 464px) 100vw, 464px" /></div></a>
+        <div class="c-sponsored-article__meta">
+
+            
+            <h6 class="c-sponsored-article__headline">
+                <a href="https://www.newstatesman.com/spotlight/sustainability/2023/12/artificial-intelligence-sustainability-data-net-zero">Navigating the intersection of AI and sustainability</a>
+            </h6>
+            <div class="c-sponsored-article__author">
+                                    <span class="single-author no-avatars"><span class="meta-item meta-author-wrapper">
+                    <span class="meta-author"><a href="https://www.newstatesman.com/author/spotlight" class="author-name" title="Spotlight"><span class="fa fa-user" aria-hidden="true"></span> Spotlight</a></span></span></span>                                </div>
+        </div>
+    </div>
+            <div class="c-sponsored-article__single">
+        
+			<a aria-label="How Aon is helping in the push to mitigate climate catastrophes" href="https://www.newstatesman.com/spotlight/sustainability/2023/12/aon-climate-change-catastrophe-mitigation" class="c-sponsored-article__img-link"><div class=" c-story__image--sponsored"><img width="464" height="348" class="c-sponsored-article__img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/aonimg-464x348.jpg" alt="How Aon is helping in the push to mitigate climate catastrophes" title="How Aon is helping in the push to mitigate climate catastrophes" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/aonimg-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/aonimg-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/aonimg-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/aonimg-1038x778.jpg 1038w" sizes="(max-width: 464px) 100vw, 464px" /></div></a>
+        <div class="c-sponsored-article__meta">
+
+            
+            <h6 class="c-sponsored-article__headline">
+                <a href="https://www.newstatesman.com/spotlight/sustainability/2023/12/aon-climate-change-catastrophe-mitigation">How Aon is helping in the push to mitigate climate catastrophes</a>
+            </h6>
+            <div class="c-sponsored-article__author">
+                                    <span class="single-author no-avatars"><span class="meta-item meta-author-wrapper">
+                    <span class="meta-author"><a href="https://www.newstatesman.com/author/dandick" class="author-name" title="Dan Dick"><span class="fa fa-user" aria-hidden="true"></span> Dan Dick</a></span></span></span>                                </div>
+        </div>
+    </div>
+            <div class="c-sponsored-article__single">
+        
+			<a aria-label="If given the chance to succeed, levelling up could transform the UK" href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/devolution/2023/12/levelling-up-fund-inequality-infrastructure-regeneration-wsp" class="c-sponsored-article__img-link"><div class=" c-story__image--sponsored"><img width="464" height="348" class="c-sponsored-article__img the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/imresizer-1702558626779-464x348.jpg" alt="If given the chance to succeed, levelling up could transform the UK" title="If given the chance to succeed, levelling up could transform the UK" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/14/imresizer-1702558626779-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/imresizer-1702558626779-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/imresizer-1702558626779-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/14/imresizer-1702558626779-1038x778.jpg 1038w" sizes="(max-width: 464px) 100vw, 464px" /></div></a>
+        <div class="c-sponsored-article__meta">
+
+            
+            <h6 class="c-sponsored-article__headline">
+                <a href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/devolution/2023/12/levelling-up-fund-inequality-infrastructure-regeneration-wsp">If given the chance to succeed, levelling up could transform the UK</a>
+            </h6>
+            <div class="c-sponsored-article__author">
+                                    <span class="single-author no-avatars"><span class="meta-item meta-author-wrapper">
+                    <span class="meta-author"><a href="https://www.newstatesman.com/author/ianbaker" class="author-name" title="Ian Baker"><span class="fa fa-user" aria-hidden="true"></span> Ian Baker</a></span></span></span>                                </div>
+        </div>
+    </div>
+        </div>
+
+
+
+
+<p>Around four in five of the Trusts' Conservative-voting members said they were dissatisfied with the current government’s approach to nature and climate.</p>
+
+
+
+<p>On environmental policy priorities, nearly three quarters of Labour-voting Trust members said that cleaning up pollution from rivers and seas is their top priority (74 per cent) with more than half of Conservative-voting members agreeing (57 per cent). However, fewer Labour-voting members (49 per cent) said tackling <a href="https://newstatesman.com/tag/climate-change" target="_blank" rel="noopener">climate change</a> was a top priority than Conservative-voting members (56 per cent).</p>
+
+
+
+<p>In comparison, tackling climate change is a top environmental priority for a high percentage of Green-voting members and Liberal Democrat voting members. More than three quarters (77 per cent) of Liberal Democrat voting members said tackling climate change was a top priority, with 69 per cent of Green voting members saying the same.</p>
+
+
+
+<p><strong><em>[See also: <a href="https://www.newstatesman.com/business/2023/10/private-water-companies-thirst-for-profit-will-never-be-sated">Private water companies' thirst for profit will never be sated</a>]</em></strong></p>
+
+
+
+<p></p>
+
+
+
+<iframe title="Tackling climate change is a top priority " aria-label="Bar Chart" id="datawrapper-chart-RjWJz" src="https://datawrapper.dwcdn.net/RjWJz/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="348" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+</script>
+
+
+
+<p></p>
+
+
+
+<p>Speaking exclusively to <em>New Statesman Spotlight, </em>Craig Bennett, the chief executive of the Wildlife Trusts said, “membership of the Wildlife Trusts seems to broadly match the British electorate in terms of how they voted in the last election”.</p>
+
+
+
+<p>That 90 per cent of the Trusts' members either said they will vote, or are considering voting, based on parties’ environmental policies at the next election indicates that environmental policies could potentially swing a lot of voters.  </p>
+
+
+
+<p>“We’ve never really seen a political party at a general election go for the environment vote,” Bennett told <em>Spotlight. </em>He explained that ahead of the next general election – which has been touted to take place in 2024 – all major parties should consider ironing out their environmental offering to voters.</p>
+
+
+
+<p>“It’s there for the taking for any of the policies that really have a clear, authentic, bold narrative on tackling the nature and <a href="https://www.newstatesman.com/tag/climate-crisis" target="_blank" rel="noopener">climate crisis</a>,” Bennett said.</p>
+
+
+
+<p>What has been missing from previous and current environmental policy, he said, is an authentic narrative around how protecting nature and enhancing biodiversity can be “integrated into delivering on the things we want in society”.</p>
+
+
+
+<p>He pointed to a report published by the Wildlife Trusts earlier this year – <a href="https://www.wildlifetrusts.org/sites/default/files/2023-07/23JUN_Health_Report_Summary_FINAL.pdf" target="_blank" rel="noopener nofollow"><em>A Natural Health Service</em></a> – which outlined the ways in which nature can be used in preventative healthcare such as in combatting loneliness among older people, and anxiety in the wider population. The research showed that natural schemes could save the NHS £6m a year.</p>
+
+
+
+<p>“I’d like to see parties go a lot further on the ability for policies to properly integrate the environment agenda with the education agenda, with the economy, with health, with jobs, with skills,” Bennett told <em>Spotlight.</em></p>
+
+
+
+<p>When asked why nature has occasionally fallen behind climate on the list of government priorities, Bennett said it can often prove difficult to set targets for nature and biodiversity. He explained that while this is beginning to change – the <a href="https://www.cbd.int/gbf/" target="_blank" rel="noopener nofollow">Global Biodiversity Framework</a> (which was agreed at the UN's Biodiversity Conference, or Cop15, last year) has now emerged to improve accountability on nature restoration – we’re not there yet.</p>
+
+
+
+<p>“It has fallen behind and it needs really clear attention,” Bennett said. He explained that in recent years, the pandemic has really put the “spotlight on nature”.</p>
+
+
+
+<p>“We should never forget that <a href="https://www.newstatesman.com/tag/covid-19" target="_blank" rel="noopener">Covid-19</a> almost certainly will prove to have been something caused by the global ecological crisis,” Bennett said, “so I think we have started to finally realise how important nature is to our lives.”</p>
+
+
+
+[<strong><em>See also: <a href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/10/finance-businesses-nature-biodiversity-financial-disclosures-framework" target="_blank" rel="noopener">“Don’t get left behind”: understanding the finance sector’s reliance on nature</a></em>] </strong></p>
+</p>                
+                                        <div class="c-tags"> 
+                     <span class="c-tags__title">Topics in this article :  </span> 
+            <a href="https://www.newstatesman.com/tag/net-zero" rel="tag" data-tag="">Net zero </a><span class="c-tags__seperator">,</span> <a href="https://www.newstatesman.com/tag/pollution" rel="tag" data-tag="">Pollution </a><span class="c-tags__seperator">,</span> <a href="https://www.newstatesman.com/tag/pwfree" rel="tag" data-tag="hide">pwfree </a><span class="c-tags__seperator">,</span> <a href="https://www.newstatesman.com/tag/uk-elections-2024" rel="tag" data-tag="">UK General Elections </a>                     
+        </div>
+        <div class="c-share c-share--clear">
+    <ul class="c-share__list">
+        <li>
+            <a href="" class="c-share__link icon-email" title="Share in an email">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-linkedin" href="http://www.linkedin.com/shareArticle?mini=true&url=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on LinkedIN">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-twitter"  href="https://twitter.com/intent/tweet?url=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on Twitter">
+            </a>
+        </li>
+        <li>
+            <a class="c-share__link  icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/12/wildlife-nature-biodiversity-climate-pollution-general-election" target="_blank" title="Share on facebook">
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="c-podcast">
+    </div>
+                <div id="piano-paywall"></div>
+            </div>
+
+        </section><!-- .entry-content /-->
+
+        <aside id="sidebar-container" class="c-sidebar">
+    
+    <div class="c-author about-author-16817">
+        <div class="c-author__container">
+                        <div class="c-author__avatar">
+                                    <a href="https://www.newstatesman.com/author/megankenyon">
+                                    
+                    <img alt='Photo of Megan Kenyon' src='https://www.newstatesman.com/wp-content/uploads/sites/2/2023/09/27/MeganKenyon1-177x177.png' srcset='https://www.newstatesman.com/wp-content/uploads/sites/2/2023/09/27/MeganKenyon1-177x177.png 2x' class='avatar avatar-177 photo' height='177' width='177' loading='lazy' decoding='async'/>                
+                                    </a>
+                            </div><!-- .c-author__avatar /-->
+                            <div class="c-author__meta">
+                <h3 class="c-author__name">
+                                            <a href="https://www.newstatesman.com/author/megankenyon">
+                    
+                        Megan Kenyon
+                                            </a>
+                                    </h3>
+                                <a href="https://twitter.com/meganekenyon"
+                    target="_blank"
+                    class="c-author__website">@meganekenyon</a>
+                            
+                <div class="c-author-info">
+
+                    <div class="c-author__description">
+                        Megan Kenyon is policy correspondent at the <i>New Statesman</i> covering sustainability for the <i>Spotlight</i> policy supplement. She writes on climate change, energy security, nature recovery, housing, and planning.                    </div><!-- .author-bio /-->
+
+                                    </div>
+            </div><!-- .author-info /-->
+        </div>
+        <div class="clearfix"></div>
+    </div><!-- .about-author /-->
+        <div class="c-googleAd-container">
+    <div class="GAS_desctop GOOGLE_ADS_SLOT" data-sizes="300,600" style="display:none; overflow: hidden;margin-bottom: 36px;"></div>
+</div>
+
+</aside>
+
+
+
+    </article><!-- #the-post /-->
+
+    
+    <div class="post-components">
+        <div class="prj--rr">
+		<div class="prj--rr-col">
+        		</div>
+</div>
+    </div><!-- .post-components /-->
+
+    
+</div><!-- .main-content -->
+
+
+<div class="footer-widgets-container">
+    <div class="container">
+        
+        <footer class="c-article-footer">
+            <div class="c-article-footer__container l-segment " data-columns=3>
+
+                                <div class="l-segment__item">
+                    <div class="c-author-related">
+    
+    <h4 class="c-author-related__title c-widget__title">More from this author
+        <a href="https://www.newstatesman.com/author/megankenyon" class="c-widget__link--all">See All</a>    
+     </h4>
+
+    <div class="c-author-related__articles">
+                     
+            <div class="c-author-related__article">
+            <a href="https://www.newstatesman.com/spotlight/sustainability/climate/2023/12/were-telling-the-wrong-story-about-climate-policy" class="c-author-related__img-link"> <img width="180" height="101" src="https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-180x101.png" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-180x101.png 180w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-1536x860.png 1536w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-2048x1147.png 2048w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-397x222.png 397w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-300x168.png 300w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-768x430.png 768w, https://dl6pgk4f88hky.cloudfront.net/2023/11/15/DrFriederikeOttoinClimateScienceTranslated_CreditGuyReece-min-1024x574.png 1024w" sizes="(max-width: 1407px) 1407px, (max-width: 335px) 335px, (max-width: 705px) 705px, (max-width: 335px) 335px, (max-width: 689px) 689px, (max-width: 336px) 336px, (max-width: 210px) 210px, (max-width: 101px) 101px, (max-width: 1024px) 1024px, (max-width: 101px) 101px, (max-width: 397px) 397px, (max-width: 464px) 464px, (max-width: 797px) 797px, (max-width: 960px) 960px, (max-width: 314px) 314px, (max-width: 464px) 464px, (max-width: 735px) 735px, (max-width: 1038px) 1038px" /> </a>         
+            <div class="c-author-related__meta">
+                                <a href="https://www.newstatesman.com/author/megankenyon" class="c-author-related__author-link">Megan Kenyon </a>
+                            <h6 class="c-author-related__headline"><a href="https://www.newstatesman.com/spotlight/sustainability/climate/2023/12/were-telling-the-wrong-story-about-climate-policy ">We're telling the wrong story about climate policy </a></h6>
+    </div>
+            
+            </div>
+             
+            <div class="c-author-related__article">
+            <a href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/2023/11/council-bankruptcy-tracker-local-government-authorities-finances" class="c-author-related__img-link"> <img width="180" height="120" src="https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-180x120.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-180x120.jpeg 180w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-300x200.jpeg 300w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-1024x683.jpeg 1024w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-768x512.jpeg 768w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-1536x1024.jpeg 1536w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-2048x1365.jpeg 2048w, https://dl6pgk4f88hky.cloudfront.net/2022/09/shutterstock_1071463091-397x265.jpeg 397w" sizes="(max-width: 1407px) 1407px, (max-width: 335px) 335px, (max-width: 705px) 705px, (max-width: 335px) 335px, (max-width: 689px) 689px, (max-width: 336px) 336px, (max-width: 210px) 210px, (max-width: 101px) 101px, (max-width: 1024px) 1024px, (max-width: 101px) 101px, (max-width: 397px) 397px, (max-width: 464px) 464px, (max-width: 797px) 797px, (max-width: 960px) 960px, (max-width: 314px) 314px, (max-width: 464px) 464px, (max-width: 735px) 735px, (max-width: 1038px) 1038px" /> </a>         
+            <div class="c-author-related__meta">
+                                <a href="https://www.newstatesman.com/author/megankenyon" class="c-author-related__author-link">Megan Kenyon </a>
+                            <h6 class="c-author-related__headline"><a href="https://www.newstatesman.com/spotlight/economic-growth/regional-development/2023/11/council-bankruptcy-tracker-local-government-authorities-finances ">Council bankruptcy tracker: authorities under increasing financial strain </a></h6>
+    </div>
+            
+            </div>
+           </div>
+</div>
+                </div>
+                
+                                <div class="l-segment__item">
+                    <h3 class="c-widget__title">More of this topic</h3><div id="posts-list-widget-2" class="c-container-wrapper c-widget posts-list"><div class="posts-list-items">
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="Britain is one of six major countries not providing “fair share” of climate finance" href="https://www.newstatesman.com/spotlight/sustainability/climate/2023/12/britain-is-one-of-six-major-countries-not-providing-fair-share-of-climate-finance" class="c-af__related__img-link"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/GettyImages-1815428192-314x235.jpg" alt="Britain is one of six major countries not providing “fair share” of climate finance" title="Britain is one of six major countries not providing “fair share” of climate finance" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/GettyImages-1815428192-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/GettyImages-1815428192-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/GettyImages-1815428192-735x551.jpg 735w" sizes="(max-width: 314px) 100vw, 314px" /></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-8104 the-global-title" href="https://www.newstatesman.com/spotlight/sustainability/climate">Climate</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/spotlight/sustainability/climate/2023/12/britain-is-one-of-six-major-countries-not-providing-fair-share-of-climate-finance"
+            title="Britain is one of six major countries not providing “fair share” of climate finance">Britain is one of six major countries not providing “fair share” of climate finance</a></h6>
+    </div>
+    
+</div>
+
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="“Don&#8217;t get left behind”: understanding the finance sector’s reliance on nature" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/10/finance-businesses-nature-biodiversity-financial-disclosures-framework" class="c-af__related__img-link"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2022/02/202206-Nature-314x235.jpg" alt="“Don&#039;t get left behind”: understanding the finance sector’s reliance on nature" title="“Don&#039;t get left behind”: understanding the finance sector’s reliance on nature" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2022/02/202206-Nature-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2022/02/202206-Nature-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2022/02/202206-Nature-735x551.jpg 735w" sizes="(max-width: 314px) 100vw, 314px" /></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-8163 the-global-title" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature">Biodiversity and Nature</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/10/finance-businesses-nature-biodiversity-financial-disclosures-framework"
+            title="“Don&#8217;t get left behind”: understanding the finance sector’s reliance on nature">“Don&#8217;t get left behind”: understanding the finance sector’s reliance on nature</a></h6>
+    </div>
+    
+</div>
+
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="The Research Brief: how local authorities can lead on nature-based climate solutions" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/09/local-authorities-nature-based-climate-solutions" class="c-af__related__img-link"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/09/13/ScreenShot2023-09-13at11.18.29-314x235.png" alt="The Research Brief: how local authorities can lead on nature-based climate solutions" title="The Research Brief: how local authorities can lead on nature-based climate solutions" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/09/13/ScreenShot2023-09-13at11.18.29-314x235.png 314w, https://dl6pgk4f88hky.cloudfront.net/2023/09/13/ScreenShot2023-09-13at11.18.29-464x348.png 464w, https://dl6pgk4f88hky.cloudfront.net/2023/09/13/ScreenShot2023-09-13at11.18.29-735x551.png 735w, https://dl6pgk4f88hky.cloudfront.net/2023/09/13/ScreenShot2023-09-13at11.18.29-1038x778.png 1038w" sizes="(max-width: 314px) 100vw, 314px" /></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-8163 the-global-title" href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature">Biodiversity and Nature</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/spotlight/sustainability/biodiversity-nature/2023/09/local-authorities-nature-based-climate-solutions"
+            title="The Research Brief: how local authorities can lead on nature-based climate solutions">The Research Brief: how local authorities can lead on nature-based climate solutions</a></h6>
+    </div>
+    
+</div>
+</div><div class="clearfix"></div></div><!-- .widget /-->                </div>
+                
+                                <div class="l-segment__item">
+                    
+<h3 class="c-widget__title">Recent Podcasts</h3>
+<div class="posts-list-items">
+
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="Is British democracy under threat? With Armando Iannucci | Westminster Reimagined" href="https://www.newstatesman.com/podcasts/new-statesman-podcast/westminster-reimagined/2023/12/is-british-democracy-under-threat-with-armando-iannucci-westminster-reimagined" class="c-af__related__img-link"><div class=" c-story__image--podcast"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-314x235.jpg" alt="Is British democracy under threat? With Armando Iannucci | Westminster Reimagined" title="Is British democracy under threat? With Armando Iannucci | Westminster Reimagined" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-397x298.jpg 397w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-180x135.jpg 180w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-1038x778.jpg 1038w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-300x225.jpg 300w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-768x576.jpg 768w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy-1024x768.jpg 1024w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Democracy.jpg 1280w" sizes="(max-width: 314px) 100vw, 314px" /></div></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-20899 the-global-title" href="https://www.newstatesman.com/podcasts/new-statesman-podcast/westminster-reimagined">Westminster Reimagined</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/podcasts/new-statesman-podcast/westminster-reimagined/2023/12/is-british-democracy-under-threat-with-armando-iannucci-westminster-reimagined"
+            title="Is British democracy under threat? With Armando Iannucci | Westminster Reimagined">Is British democracy under threat? With Armando Iannucci | Westminster Reimagined</a></h6>
+    </div>
+    
+</div>
+
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="The collapse of rentier capitalism" href="https://www.newstatesman.com/podcasts/new-statesman-podcast/2023/12/the-collapse-of-rentier-capitalism" class="c-af__related__img-link"><div class=" c-story__image--podcast"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-314x235.jpg" alt="The collapse of rentier capitalism" title="The collapse of rentier capitalism" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-397x298.jpg 397w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-180x135.jpg 180w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-1038x778.jpg 1038w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-300x225.jpg 300w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-768x576.jpg 768w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier-1024x768.jpg 1024w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Rentier.jpg 1280w" sizes="(max-width: 314px) 100vw, 314px" /></div></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-922 the-global-title" href="https://www.newstatesman.com/podcasts">Podcasts</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/podcasts/new-statesman-podcast/2023/12/the-collapse-of-rentier-capitalism"
+            title="The collapse of rentier capitalism">The collapse of rentier capitalism</a></h6>
+    </div>
+    
+</div>
+
+<div class="c-af__related-article">
+    
+    
+			<a aria-label="The most misleading phrases in political journalism" href="https://www.newstatesman.com/podcasts/new-statesman-podcast/2023/12/the-most-misleading-phrases-in-political-journalism" class="c-af__related__img-link"><div class=" c-story__image--podcast"><img width="314" height="235" class="the-global-title" src="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-314x235.jpg" alt="The most misleading phrases in political journalism" title="The most misleading phrases in political journalism" loading="lazy" srcset="https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-314x235.jpg 314w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-397x298.jpg 397w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-180x135.jpg 180w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-464x348.jpg 464w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-735x551.jpg 735w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-1038x778.jpg 1038w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-300x225.jpg 300w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-768x576.jpg 768w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism-1024x768.jpg 1024w, https://dl6pgk4f88hky.cloudfront.net/2023/12/04/Political-journalism.jpg 1280w" sizes="(max-width: 314px) 100vw, 314px" /></div></a>        <div class="c-af__meta">
+        <a class="c-af__related__cat figaro-cat-922 the-global-title" href="https://www.newstatesman.com/podcasts">Podcasts</a>        <h6 class="c-af__related__headline"><a href="https://www.newstatesman.com/podcasts/new-statesman-podcast/2023/12/the-most-misleading-phrases-in-political-journalism"
+            title="The most misleading phrases in political journalism">The most misleading phrases in political journalism</a></h6>
+    </div>
+    
+</div>
+</div><div class="clearfix"></div></div><!-- .widget /-->                </div>
+                
+                
+        </footer><!-- .footer-widget-area /-->
+
+                </div><!-- .container /-->
+</div><!-- #Footer-widgets-container /-->
+        
+</div><!-- /.wrapper__inner -->
+</div><!-- /.wrapper -->
+<a id="scrollToTopButton" href="#"><i class="icon-chevron-up"></i></a>
+</main><!-- /.main -->
+    <footer class="c-footer">
+        <div class="c-footer__container">
+                        <div class="c-footer__nav">
+                <div class="c-footer__title">New Statesman</div>
+                <div class="menu-useful-links-container"><ul id="menu-useful-links" class="c-footer-menu"><li id="menu-item-203044" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-203044"><a href="https://www.newstatesman.com/about-us-newstatesman">About us</a></li>
+<li id="menu-item-202208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202208"><a href="https://www.newstatesman.com/history-of-the-new-statesman">History</a></li>
+<li id="menu-item-405979" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-405979"><a target="_blank" rel="noopener" href="https://newstatesmansupport.zendesk.com/hc/en-gb">Help Centre</a></li>
+<li id="menu-item-202266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202266"><a href="https://www.newstatesman.com/contact-us">Contact us</a></li>
+<li id="menu-item-423745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-423745"><a href="https://www.newstatesman.com/advertise-on-new-statesman">Advertising &#038; Partnerships</a></li>
+<li id="menu-item-202026" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-202026"><a href="https://www.newstatesman.com/rss-feed">RSS</a></li>
+</ul></div>            </div>
+            <div class="c-footer__social">
+                <div class="c-footer__title">Social</div>
+                <div class="c-social">
+                    <ul><li class="c-social-icons-item"><a class="c-social-link facebook-social-icon" rel="external noopener nofollow" target="_blank" href="https://en-gb.facebook.com/NewStatesman/" title="Follow us on Facebook"><span class="icon-facebook"></span><span class="screen-reader-text">Facebook</span></a></li><li class="c-social-icons-item"><a class="c-social-link twitter-social-icon" rel="external noopener nofollow" target="_blank" href="https://twitter.com/newstatesman" title="Follow us on Twitter"><span class="icon-twitter"></span><span class="screen-reader-text">Twitter</span></a></li><li class="c-social-icons-item"><a class="c-social-link linkedin-social-icon" rel="external noopener nofollow" target="_blank" href="https://www.linkedin.com/company/new-statesman/" title="Follow us on LinkedIn"><span class="icon-linkedin"></span><span class="screen-reader-text">LinkedIn</span></a></li><li class="c-social-icons-item"><a class="c-social-link instagram-social-icon" rel="external noopener nofollow" target="_blank" href="https://www.instagram.com/newstatesman/?hl=en" title="Follow us on Instagram"><span class="icon-instagram"></span><span class="screen-reader-text">Instagram</span></a></li></ul> 
+                </div>
+            </div>
+                            <div class="c-footer__legal">
+                    <div class="c-footer__title">Legal</div>
+                    <div class="c-footer__menu"><ul id="menu-legal" class="c-footer-menu"><li id="menu-item-201116" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201116"><a href="https://www.newstatesman.com/privacy-policy">Privacy policy</a></li>
+<li id="menu-item-201117" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-201117"><a href="https://www.newstatesman.com/terms-and-conditions">T&#038;Cs</a></li>
+</ul></div>                </div>
+                        <div class="c-footer__copyright">
+                <div class="c-copyright-text c-copyright-text-first">New Times <br>
+New Ideas <br>
+New Statesman</div><div class="c-copyright-text c-copyright-text-second">© 2023 New Statesman</div>            </div>
+
+                                </div>
+    </footer><!-- /.footer -->
+<script>
+// GOOGLE SCRIPT
+
+let allADDslots = document.getElementsByClassName("GOOGLE_ADS_SLOT");
+let mobileWH = 768, tabletWH = 1024, currentDocumentWidth = 0;
+
+function getTheDocumentWidth() {
+    let DW = document.documentElement.clientWidth;
+    currentDocumentWidth = DW;
+    return DW
+}
+
+function showHideHeadBanners(){
+    findCurentView();
+    console.log(curentView);
+    let activeBannersList = [];
+
+    Array.prototype.forEach.call(allADDslots, function (allADDslots, index) {
+        allADDslots.style.display = "none";
+    });
+
+    let currentView = "GAS_" + curentView;
+    let vissibleSlots = document.getElementsByClassName(currentView);
+
+    Array.prototype.forEach.call(vissibleSlots, function (vissibleSlots, index) {
+        vissibleSlots.style.display = "block";
+        activeBannersList.push(vissibleSlots.getAttribute('id'))
+    });
+    activeBannersList.forEach((element, index) => { 
+        let curentObject = document.getElementById(element);  
+        let bannerStatus = curentObject.getAttribute("data-bannerStatus");
+        if(bannerStatus != "1"){
+console.log("trigerit")
+        googletag.cmd.push(function () { googletag.display(element); });
+        curentObject.setAttribute("data-bannerStatus","1");
+        }
+        //DO NOT RELOAD !!!!!
+    }); 
+}
+
+function findCurentView() {
+    if (getTheDocumentWidth() > 0) {
+        curentView = "mobile";
+        if (getTheDocumentWidth() > mobileWH) {
+            curentView = "tablet";
+            if (getTheDocumentWidth() > tabletWH) {
+                curentView = "desctop";
+            }
+        }
+    }
+    return curentView;
+}
+
+window.addEventListener("resize", showHideHeadBanners);
+
+
+function convertToAnArray(data) {
+    let testTHing = data;
+    let newArray = [];
+    if (testTHing.includes("-")) {
+        var nameArr = testTHing.split('-');
+        nameArr.forEach((element, index) => {
+            newArray.push(element.split(",").map(Number));
+        });
+    } else {
+        // newArray[0] = [];
+        newArray.push(testTHing.split(",").map(Number));
+    }
+    return newArray;
+}
+
+
+
+googletag.cmd.push(function () {
+    let createDATA = [];
+    Array.prototype.forEach.call(allADDslots, function (allADDslots, index) {
+        let googleIdentity = '/' + googleSessionID + '/' + googleProjectName + '/' + googleProjectSession + '_Unit' + (index + 1);
+        let curentSlotSizes = allADDslots.getAttribute('data-sizes');
+        let curentSlotID = 'div-gpt-ad-' + googleAdsID + '-' + (index + 1); // allADDslots.getAttribute('id');
+        allADDslots.setAttribute('id', curentSlotID);
+
+
+        //data-ifStorefront-size
+
+        let additionalSizes;
+
+        if(document.querySelector('body').classList.contains('storefronts-template-default') && allADDslots.getAttribute('data-ifStorefront-size')){
+            curentSlotSizes = allADDslots.getAttribute('data-ifStorefront-size');
+            console.log("SF custom size");
+            console.log(curentSlotSizes);
+        }
+
+        createDATA[index] = [googleIdentity, curentSlotSizes, curentSlotID];
+    });
+
+    createDATA.forEach((element, index) => {
+        googletag.defineSlot(element[0], convertToAnArray(element[1]), element[2]).addService(googletag.pubads());
+    });
+    
+   // googletag.pubads().enableSingleRequest(); //trigger to load all banners instantly
+    googletag.enableServices();
+    showHideHeadBanners();
+});
+
+
+</script>         <script>
+        jQuery('.c-related-companies-article__single').hover(function() { 
+        var hoverTime = 1000;
+        var elements = [].slice.apply(document.querySelectorAll('.c-related-companies-article__single'));
+        elements.forEach(function (el) {
+        var timeout;
+       el.addEventListener('mouseover', function (){
+        var match = jQuery(this).attr('data-url');
+        var hovertitle = jQuery(this).attr('data-target');
+        var curpostid = jQuery(this).attr('id');  
+        var getpostid = curpostid.replace('company', '');
+                if(!jQuery(this).hasClass("verify")){
+            jQuery(this).addClass("verify");
+            timeout = window.setTimeout(function () {
+                permutive.track('TabClick', {
+                    article: {
+                        url: match,               
+                        title:hovertitle
+                    }
+                });
+            }, hoverTime);
+        }
+      });
+      
+     });
+    
+    });
+    
+    </script>
+        
+        <!-- wpsolr - ajax auto completion nonce -->
+        <input type="hidden" id="wpsolr_autocomplete_nonce"
+               value="87ec5a984c">
+
+		<script src="https://www.newstatesman.com/wp-content/themes/newstatesman/assets/dist/js/datalayer.min.js"></script><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: NSMG - NS - B2B Marketing - Build Your Campaign -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,183417,'itivcllpgzjgybq8rokx');</script>
+<!-- / OptinMonster --><!-- This site is converting visitors into subscribers and customers with OptinMonster - https://optinmonster.com :: Campaign Title: NS - Digital Sub - £8.99 - Slide In -->
+<script>(function(d,u,ac){var s=d.createElement('script');s.type='text/javascript';s.src='https://a.omappapi.com/app/js/api.min.js';s.async=true;s.dataset.user=u;s.dataset.campaign=ac;d.getElementsByTagName('head')[0].appendChild(s);})(document,183417,'wjlgnjev2knvqx2ntkcf');</script>
+<!-- / OptinMonster -->		<script type="text/javascript">
+		var itivcllpgzjgybq8rokx_shortcode = true;var wjlgnjev2knvqx2ntkcf_shortcode = true;		</script>
+		<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/july22-nsmg-newsletter-settings/themeAssets/figaroTheme/newsletters.min.js' id='nsmgnewsletterFigaroTheme-js'></script>
+<script type='text/javascript' src='https://www.google.com/recaptcha/api.js' id='ha-recaptcha-js'></script>
+<script type='text/javascript' id='nsmgscampaigns-js-extra'>
+/* <![CDATA[ */
+var nsmgscampaigns = {"ajaxurl":"https:\/\/www.newstatesman.com\/wp-admin\/admin-ajax.php","nonce":"b7cb276306"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-campaigns/assets/public/js/main.min.js' defer id='nsmgscampaigns-js'></script>
+<script type='text/javascript' id='nsmgpolls-js-extra'>
+/* <![CDATA[ */
+var nsmgpolls = {"ajaxurl":"https:\/\/www.newstatesman.com\/wp-admin\/admin-ajax.php","options":{"css":"","polls":[],"project_id_init":"","project_id":"","dataset_id":"","tablename":"","key":""},"nonce":"fc0a42dd7a"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-polls/assets/public/js/main.js' id='nsmgpolls-js'></script>
+<script type='text/javascript' id='datalayer-script-js-extra'>
+/* <![CDATA[ */
+var datalayer_script_vars = {"contentType":"post","pageName":"Poll shows nature could prove vital to winning swing voters","metaTitle":"Poll shows nature could prove vital to winning swing voters","pageId":"432461","storyType":"","domain":"https:\/\/www.newstatesman.com","platform":"website","localDate":"18th Dec 2023","navigationDestinationPage":"wildlife-nature-biodiversity-climate-pollution-general-election","NavigationLinkType":"post","pageUrl":"https:\/\/www.newstatesman.com\/spotlight\/sustainability\/biodiversity-nature\/2023\/12\/wildlife-nature-biodiversity-climate-pollution-general-election","pageUri":"\/spotlight\/sustainability\/biodiversity-nature\/2023\/12\/wildlife-nature-biodiversity-climate-pollution-general-election","utmSource":null,"lastModified":"2023-12-18 13:06:40[BST]","firstPublished":"2023-12-18 13:06:34[BST]","authorName":"Megan Kenyon","sponsored":"false","clientName":null,"editorialChannel":"Spotlight","contentTags":"Net zero,Pollution,pwfree,UK General Elections","contentCategories":"Biodiversity and Nature,Climate,Spotlight on Policy,Sustainability","postFormat":"standard","timeSincePublication":"4034","articleHeadline":"Poll shows nature could prove vital to winning swing voters","urlSlug":"wildlife-nature-biodiversity-climate-pollution-general-election","metaDescription":"Exclusive research shared with Spotlight shows that robust biodiversity policies could be crucial at the next election.","siteSection":"Spotlight on Policy","siteSubSection":"Biodiversity and Nature,Sustainability"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-tracking/js/datalayer.js' id='datalayer-script-js'></script>
+<script type='text/javascript' id='crb-google-tagmanager-js-extra'>
+/* <![CDATA[ */
+var crbTracker = {"googleTagManager":{"id":"GTM-MDH5VM9"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-tracking//js/googleTagManager.js' id='crb-google-tagmanager-js'></script>
+<script type='text/javascript' async src='https://5b476c7c-253b-4e23-9993-4df0b853b921.edge.permutive.app/5b476c7c-253b-4e23-9993-4df0b853b921-web.js' id='crb-permutive-cdn-js'></script>
+<script type='text/javascript' id='crb-permutive-js-extra'>
+/* <![CDATA[ */
+var crbTracker = {"permutive":{"workspaceID":"5b476c7c-253b-4e23-9993-4df0b853b921","publicAPIKey":"50de2fe6-d235-41ef-b65a-3aef7af8d446","postTitle":"Poll shows nature could prove vital to winning swing voters","postID":432461,"postType":"post","postDate":"18 December 2023","postAuthor":"Megan Kenyon","postTags":"Net zero, Pollution, pwfree, UK General Elections","postCategories":"Biodiversity and Nature, Climate, Spotlight on Policy, Sustainability","collectDomains":"https:\/\/www.newstatesman.com\/wp-content\/plugins\/nsmg-tracking\/\/js\/pollsInFrame.js","pageViewEvent":{"company_name":"","post_title":"Poll shows nature could prove vital to winning swing voters","post_id":432461,"categories":["Biodiversity and Nature","Climate","Spotlight on Policy","Sustainability"],"tags":["Net zero","Pollution","pwfree","UK General Elections"],"author":"Megan Kenyon","post_type":"post","article_date":"2023-12-18T13:06:34Z","regions":[],"industry_taxonomy":[],"sectors":[],"report_type":""}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-tracking//js/permutive.js' id='crb-permutive-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/nsmg-tracking//js/permutiveData.min.js' id='crb-permutive-data-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/core/js/devbridge/jquery.autocomplete.js' id='solr_auto_js1-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/core/bower_components/jsurl/url.min.js' id='urljs-js'></script>
+<script type='text/javascript' id='autocomplete-js-extra'>
+/* <![CDATA[ */
+var wp_localize_script_autocomplete = {"data":{"wpsolr_v":"","ajax_url":"https:\/\/www.newstatesman.com\/wp-admin\/admin-ajax.php","lang":"","is_show_url_parameters":true,"is_ajax":false,"SEARCH_PARAMETER_VIEW_ID":"wpsolr_v","SEARCH_PARAMETER_S":"s","SEARCH_PARAMETER_SEARCH":"search","SEARCH_PARAMETER_Q":"wpsolr_q","SEARCH_PARAMETER_FQ":"wpsolr_fq","SEARCH_PARAMETER_SORT":"wpsolr_sort","SEARCH_PARAMETER_PAGE":"wpsolr_page","SORT_CODE_BY_RELEVANCY_DESC":"sort_by_relevancy_desc","css_ajax_container_page_title":".page-title","css_ajax_container_page_sort":".woocommerce-ordering select,.select_field","css_ajax_container_results":".products,.results-by-facets","css_ajax_container_overlay":".products,.results-by-facets","css_ajax_container_pagination":"nav.woocommerce-pagination,.paginate_div","css_ajax_container_pagination_page":"a.page-numbers,a.paginate","css_ajax_container_results_count":".woocommerce-result-count,.res_info","ajax_delay_ms":"","redirect_search_home":"","suggestions_icon":"https:\/\/www.newstatesman.com\/wp-content\/plugins\/wpsolr-pro\/wpsolr\/core\/images\/wpsolr-ajax-loader.gif","event_tracking":{"WPSOLR_AJAX_EVENT_TRACKING_ACTION":"wpsolr_event_tracking","SEARCH_PARAMETER_RESULTS_QUERY_ID":"wpsolr_rq","SEARCH_PARAMETER_RESULTS_POSITION":"wpsolr_rp","SEARCH_PARAMETER_EVENT_TRACKING_NAME":"wpsolr_e","SEARCH_PARAMETER_EVENT_TRACKING_CLICK_RESULT":"cr","css_event_tracking_results":"","event_tracking_query_id":""},"wpsolr_autocomplete_is_active":true,"wpsolr_autocomplete_selector":[],"wpsolr_autocomplete_action":"wdm_return_solr_rows","wpsolr_autocomplete_nonce_selector":"#wpsolr_autocomplete_nonce","wpsolr_is_search_admin":false}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/core/js/autocomplete_solr.js' id='autocomplete-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/core/js/loadingoverlay/loadingoverlay.min.js' id='loadingoverlay-js'></script>
+<script type='text/javascript' id='figaro-scripts-js-extra'>
+/* <![CDATA[ */
+var figaro = {"is_rtl":"","ajaxurl":"https:\/\/www.newstatesman.com\/wp-admin\/admin-ajax.php","post_id":"432461","lazyload":"","ajax_loader":"<div class=\"loader-overlay\"><div class=\"spinner-circle\"><\/div><\/div>","type_to_search":""};
+/* ]]> */
+</script>
+<script type='text/javascript' defer="defer" src='https://www.newstatesman.com/wp-content/uploads/sites/2/figaro/assets/js/figaro-b975025ec94811bc5a5b035e4d91d05b.js' id='figaro-scripts-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/themes/figaro/assets/dist/js/script.min.js' id='company-script-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/pro/extensions/theme/template/facet-range/wpsolr-facet-range.js' id='wpsolr-facet-range-js-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/wpsolr-pro/wpsolr/pro/extensions/theme/template/facet-color-picker/wpsolr-facet-color-picker.js' id='wpsolr-facet-color-picker-js-js'></script>
+<script>(function(d){var s=d.createElement("script");s.type="text/javascript";s.src="https://a.omappapi.com/app/js/api.min.js";s.async=true;s.id="omapi-script";d.getElementsByTagName("head")[0].appendChild(s);})(document);</script><script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/storefronts/assets/js/app.min.js' id='main-js-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/vms-automation/vms-script.min.js' id='my-custom-script-js'></script>
+<script type='text/javascript' src='https://www.newstatesman.com/wp-content/plugins/optinmonster/assets/dist/js/helper.min.js' id='optinmonster-wp-helper-js'></script>
+		<script type="text/javascript">var omapi_localized = {
+			ajax: 'https://www.newstatesman.com/wp-admin/admin-ajax.php?optin-monster-ajax-route=1',
+			nonce: '9ba4bcf877',
+			slugs:
+			{"itivcllpgzjgybq8rokx":{"slug":"itivcllpgzjgybq8rokx","mailpoet":false},"wjlgnjev2knvqx2ntkcf":{"slug":"wjlgnjev2knvqx2ntkcf","mailpoet":false}}		};</script>
+				<script type="text/javascript">var omapi_data = {"wc_cart":[],"object_id":432461,"object_key":"post","object_type":"post","term_ids":[8163,8104,845,5061],"wp_json":"https:\/\/www.newstatesman.com\/wp-json"};</script>
+		
+<script async>
+    tp = window["tp"] || [];
+    console.log(tp);
+    var allTags = ["Net zero","Pollution","pwfree","UK General Elections"];
+    tp.push(["setTags", allTags]);
+    //tp.push(["setContentSection", "ArticlePages"]);
+    tp.push(['setUsePianoIdUserProvider', true]); // Piano ID module enabled
+</script>
+<script async>
+    const userSignInBtn = document.querySelector('#piano-signIn');
+    const userSubscribeBtn = document.querySelector('#piano-subscribe');
+    let loginButtons;
+
+    if (userSignInBtn && userSubscribeBtn) {
+        loginButtons = [userSignInBtn, userSubscribeBtn];
+    } 
+
+    loginButtons.forEach((loginButton) => {
+
+        loginButton.addEventListener('click', () => {
+
+            const articleRedirectUrl = window.location.href;
+
+            if(window.location.href.includes('login') || window.location.href.includes('account')){
+                localStorage.setItem('articleRedirectUrl', window.location.origin);    
+            } else{
+                localStorage.setItem('articleRedirectUrl', articleRedirectUrl);
+            }
+
+            
+
+        });
+
+
+    });
+</script>
+
+<script>
+function PianoLogin() {
+    console.log('This is signin screen');
+    tp = window.tp || [];
+    tp.push(["init", function () {
+        tp.pianoId.show({
+            disableSignUp: false,
+            displayMode: 'modal',
+            screen: 'login',
+            //width:'800',
+            //containerSelector: '#login-form',
+            loggedIn: function (data) {
+                console.log('user ', data.user, ' logged in with token', data.token);
+
+                //redirect user to my account page after signin
+                window.location = "/my-account";
+
+            },
+
+            loggedOut: function () {
+                console.log('user logged out');
+                //Set the CSS and HTML here for what the signup button should look like when the user is logged out //e.g. unhide the sign in button, hide the signout button
+
+            }
+        });
+        
+    }]);
+}
+
+</script>
+
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-2a3c9db24d2641e24b0","applicationID":"1184416718","transactionName":"ZQBbMEZXDRdSUxVcXlxKeAdAXwwKHEMIW1ZeAA==","queueTime":0,"applicationTime":892,"atts":"SUdYRg5NHhk=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>
+<!-- plugin=object-cache-pro client=phpredis metric#hits=18316 metric#misses=24 metric#hit-ratio=99.9 metric#bytes=8500103 metric#prefetches=2397 metric#store-reads=68 metric#store-writes=9 metric#store-hits=2439 metric#store-misses=18 metric#sql-queries=182 metric#ms-total=892.28 metric#ms-cache=86.74 metric#ms-cache-avg=1.1414 metric#ms-cache-ratio=9.7 -->
