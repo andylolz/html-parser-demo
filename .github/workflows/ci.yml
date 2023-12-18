@@ -16,6 +16,8 @@ jobs:
         run: pip install -r requirements.txt
       - name: Build
         run: python run.py
+        env:
+          PROXY: ${{ secrets.PROXY }}
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
