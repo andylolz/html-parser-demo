@@ -36,7 +36,10 @@ if __name__ == "__main__":
         url = parsed["entries"][0]["link"]
         r = requests.get(url)
         source_html = r.content
-        parsed = parse(source_html)
+        try:
+            parsed = parse(source_html)
+        except readability.readability.Unparseable:
+            continue
         root_path = Path(output_folder)
         fp = root_path / f"{slug}"
         fp.mkdir(exist_ok=True, parents=True)
