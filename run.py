@@ -45,5 +45,5 @@ if __name__ == "__main__":
         fp.mkdir(exist_ok=True, parents=True)
         with open(fp / "source.html", "wb") as fh:
             fh.write(source_html)
-        with open(fp / "index.md", "w") as fh:
+        with open(fp / "index.html", "w") as fh:
             fh.write(f'---\ntitle: "{title}"\nsource_url: {url}\n---\n\n{parsed}')
