@@ -1,0 +1,4 @@
+readability-lxml
+BeautifulSoup4
+requests
+feedparser
