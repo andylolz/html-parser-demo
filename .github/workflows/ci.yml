@@ -1,12 +1,12 @@
 name: CI
 
-on:
-  push:
+on: [push]
 permissions:
   contents: write
 
 jobs:
   ci:
+    concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
