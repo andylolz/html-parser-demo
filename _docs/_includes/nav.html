@@ -3,7 +3,7 @@
   {% for p in site.pages %}
   {% if p.source_url %}
   <li>
-      {% if page.url == p.url  %}{{ p.title }}{% else %}<a href="{{ p.url }}">{{ p.title }}</a>{% endif %}
+      {% if page.url == p.url  %}{{ p.title }}{% else %}<a href="{{ p.url | absolute_url }}">{{ p.title }}</a>{% endif %}
   </li>
   {% endif %}
   {% endfor %}
